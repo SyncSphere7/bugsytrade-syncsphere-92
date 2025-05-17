@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, ChevronDown } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -13,7 +13,6 @@ import {
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [productsDropdownOpen, setProductsDropdownOpen] = useState(false);
   const location = useLocation();
 
   // Define which routes should have an initially visible navbar
@@ -33,14 +32,6 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const toggleMobileMenu = () => {
-    setMobileMenuOpen(!mobileMenuOpen);
-  };
-
-  const toggleProductsDropdown = () => {
-    setProductsDropdownOpen(!productsDropdownOpen);
-  };
-
   // Determine the text color based on scroll state and route
   const getTextColorClass = () => {
     if (isScrolled || isRouteWithVisibleNavbar) {
@@ -58,15 +49,8 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-4 md:px-6">
-        <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center z-50">
-            <img 
-              src="/lovable-uploads/af02a5f0-874d-47bc-8efa-6d232827a50c.png" 
-              alt="Logo" 
-              className="h-10 w-auto" 
-            />
-          </Link>
-          
+        <div className="flex items-center justify-center">
+          {/* Desktop navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
             <Link 
               to="/" 
@@ -116,10 +100,8 @@ const Navbar = () => {
             >
               Blog
             </Link>
-          </nav>
-          
-          <div className="hidden lg:block">
-            <Link to="/contact">
+            
+            <Link to="/contact" className="ml-4">
               <Button 
                 variant={isScrolled || isRouteWithVisibleNavbar ? "default" : "outline"} 
                 className={`btn-hover-slide ${!isScrolled && !isRouteWithVisibleNavbar ? 'text-white border-white hover:text-white' : ''}`}
@@ -127,23 +109,35 @@ const Navbar = () => {
                 Contact Us
               </Button>
             </Link>
-          </div>
+          </nav>
           
-          <button 
-            className="lg:hidden z-50"
-            onClick={toggleMobileMenu}
-            aria-label="Toggle menu"
-          >
-            {mobileMenuOpen ? (
-              <X className={`h-6 w-6 ${getTextColorClass()}`} />
-            ) : (
-              <Menu className={`h-6 w-6 ${getTextColorClass()}`} />
-            )}
-          </button>
+          {/* Mobile menu button - kept at left side for mobile */}
+          <div className="lg:hidden flex w-full justify-between items-center">
+            <Link to="/" className="flex items-center z-50">
+              <img 
+                src="/lovable-uploads/af02a5f0-874d-47bc-8efa-6d232827a50c.png" 
+                alt="Logo" 
+                className="h-10 w-auto" 
+              />
+            </Link>
+            
+            <button 
+              className="flex items-center space-x-2"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              aria-label="Toggle menu"
+            >
+              <span className={getTextColorClass()}>Menu</span>
+              {mobileMenuOpen ? (
+                <span className={`text-2xl ${getTextColorClass()}`}>×</span>
+              ) : (
+                <span className={`text-2xl ${getTextColorClass()}`}>≡</span>
+              )}
+            </button>
+          </div>
           
           {/* Mobile menu */}
           <div 
-            className={`fixed inset-0 bg-black/90 backdrop-blur-sm z-40 lg:hidden transition-opacity duration-300 ${
+            className={`fixed inset-0 bg-coffee-dark z-40 lg:hidden transition-opacity duration-300 ${
               mobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
             }`}
           >
@@ -156,39 +150,29 @@ const Navbar = () => {
                 Home
               </Link>
               
-              <div className="flex flex-col items-center">
-                <button 
-                  className="text-xl font-medium text-white hover:text-primary transition flex items-center"
-                  onClick={toggleProductsDropdown}
+              <div className="flex flex-col items-center space-y-4">
+                <span className="text-xl font-medium text-white">Products</span>
+                <Link 
+                  to="/products/coffee" 
+                  className="text-lg font-medium text-primary hover:text-white transition"
+                  onClick={() => setMobileMenuOpen(false)}
                 >
-                  Products <ChevronDown className={`ml-1 h-5 w-5 transition-transform ${productsDropdownOpen ? 'rotate-180' : ''}`} />
-                </button>
-                
-                {productsDropdownOpen && (
-                  <div className="flex flex-col items-center mt-3 space-y-3">
-                    <Link 
-                      to="/products/coffee" 
-                      className="text-lg font-medium text-primary hover:text-white transition"
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
-                      Coffee
-                    </Link>
-                    <Link 
-                      to="/products/tea" 
-                      className="text-lg font-medium text-primary hover:text-white transition"
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
-                      Tea
-                    </Link>
-                    <Link 
-                      to="/products/cocoa" 
-                      className="text-lg font-medium text-primary hover:text-white transition"
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
-                      Cocoa
-                    </Link>
-                  </div>
-                )}
+                  Coffee
+                </Link>
+                <Link 
+                  to="/products/tea" 
+                  className="text-lg font-medium text-primary hover:text-white transition"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Tea
+                </Link>
+                <Link 
+                  to="/products/cocoa" 
+                  className="text-lg font-medium text-primary hover:text-white transition"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Cocoa
+                </Link>
               </div>
               
               <Link 

@@ -45,7 +45,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick links */}
+          {/* Quick links - Format matching the reference image */}
           <div>
             <h3 className="text-lg font-semibold mb-6">Quick Links</h3>
             <ul className="space-y-4">
