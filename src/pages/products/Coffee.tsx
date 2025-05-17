@@ -1,3 +1,4 @@
+
 import Layout from '@/components/layout/Layout';
 import SectionHeading from '@/components/ui/section-heading';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
@@ -23,7 +24,7 @@ const Coffee = () => {
     {
       name: "Specialty Grades",
       description: "Our specialty-grade coffee meets strict quality standards, featuring the finest beans with unique flavor profiles from select microclimates.",
-      image: "/lovable-uploads/0634ee8b-a672-4298-a5d6-39ec11006714.png",
+      image: "/lovable-uploads/b2b53896-79f4-4ebd-a14a-311bb4eff9a9.png",
       altitude: "1,500-2,200m",
       process: "Honey and Natural"
     }
