@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
@@ -42,7 +43,7 @@ const Navbar = () => {
           <Link to="/" className="flex items-center z-50">
             <img 
               src="/lovable-uploads/af02a5f0-874d-47bc-8efa-6d232827a50c.png" 
-              alt="BugsyTrade Logo" 
+              alt="Logo" 
               className="h-10 w-auto" 
             />
           </Link>
