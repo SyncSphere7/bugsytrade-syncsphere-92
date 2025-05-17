@@ -1,4 +1,3 @@
-
 import Layout from '@/components/layout/Layout';
 import SectionHeading from '@/components/ui/section-heading';
 import { Card, CardContent } from '@/components/ui/card';
@@ -68,25 +67,21 @@ const AboutUs = () => {
     {
       name: "Iwo Bulski",
       role: "Founder & CEO",
-      image: "/lovable-uploads/cf6fd754-2a15-4f7d-b7b5-cdf97a580988.png",
       bio: "With over 15 years in agricultural exports, Iwo founded BugsyTrade to showcase Uganda's premium products globally."
     },
     {
       name: "David Ochen",
       role: "Head of Producer Relations",
-      image: "/lovable-uploads/0634ee8b-a672-4298-a5d6-39ec11006714.png",
       bio: "David works directly with our network of farmers, ensuring sustainable practices and premium quality."
     },
     {
       name: "Maria Adeke",
       role: "Quality Assurance Director",
-      image: "/lovable-uploads/77bed13d-6c7e-4c8f-aee5-b4ee0239ed76.png",
       bio: "Maria oversees our rigorous quality control processes to meet international standards."
     },
     {
       name: "Robert Kyambadde",
       role: "Export Logistics Manager",
-      image: "/lovable-uploads/0634ee8b-a672-4298-a5d6-39ec11006714.png",
       bio: "Robert ensures seamless delivery of our products from Uganda to European destinations."
     }
   ];
@@ -242,19 +237,10 @@ const AboutUs = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
               {team.map((member, index) => (
-                <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
-                  <div className="h-64 overflow-hidden">
-                    <img 
-                      src={member.image} 
-                      alt={member.name} 
-                      className="w-full h-full object-cover object-center"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold font-serif mb-1">{member.name}</h3>
-                    <p className="text-coffee mb-4">{member.role}</p>
-                    <p className="text-gray-600 text-sm">{member.bio}</p>
-                  </div>
+                <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden p-6">
+                  <h3 className="text-xl font-bold font-serif mb-1">{member.name}</h3>
+                  <p className="text-coffee mb-4">{member.role}</p>
+                  <p className="text-gray-600 text-sm">{member.bio}</p>
                 </div>
               ))}
             </div>
