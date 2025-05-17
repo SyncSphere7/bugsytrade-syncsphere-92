@@ -66,10 +66,10 @@ const AboutUs = () => {
 
   const team = [
     {
-      name: "Sarah Nakato",
+      name: "Iwo Bulski",
       role: "Founder & CEO",
-      image: "/lovable-uploads/77bed13d-6c7e-4c8f-aee5-b4ee0239ed76.png",
-      bio: "With over 15 years in agricultural exports, Sarah founded BugsyTrade to showcase Uganda's premium products globally."
+      image: "/lovable-uploads/cf6fd754-2a15-4f7d-b7b5-cdf97a580988.png",
+      bio: "With over 15 years in agricultural exports, Iwo founded BugsyTrade to showcase Uganda's premium products globally."
     },
     {
       name: "David Ochen",
