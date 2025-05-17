@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import { Instagram, Facebook, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
+import { Instagram, Facebook, Linkedin, Mail, Phone, MapPin, Twitter } from 'lucide-react';
 import NewsletterForm from '@/components/newsletter/NewsletterForm';
 
 const Footer = () => {
@@ -36,6 +36,11 @@ const Footer = () => {
                 className="text-coffee-light hover:text-white transition-colors">
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer"
+                className="text-coffee-light hover:text-white transition-colors">
+                <Twitter className="h-5 w-5" />
+                <span className="sr-only">Twitter</span>
               </a>
             </div>
           </div>
