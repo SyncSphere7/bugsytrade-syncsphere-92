@@ -219,7 +219,7 @@ const Navbar = () => {
                 className="mt-4"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                <Button variant="outline" className="text-lg border-2 border-white text-white hover:bg-white hover:text-black transition">
+                <Button variant="outline" className="text-lg border-2 border-white text-white bg-transparent hover:bg-white hover:text-black transition-colors">
                   Contact Us
                 </Button>
               </Link>
