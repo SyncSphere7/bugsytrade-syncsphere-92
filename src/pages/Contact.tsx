@@ -1,8 +1,7 @@
-
 import Layout from '@/components/layout/Layout';
 import SectionHeading from '@/components/ui/section-heading';
 import ContactForm from '@/components/contact/ContactForm';
-import { Mail, Phone, MapPin, Clock } from 'lucide-react';
+import { Mail, Phone, MapPin, Clock, Linkedin } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Card, CardContent } from '@/components/ui/card';
 import NewsletterForm from '@/components/newsletter/NewsletterForm';
@@ -32,6 +31,12 @@ const ContactPage = () => {
       title: "Business Hours",
       content: "Mon-Fri: 9AM - 5PM EAT",
       link: null,
+    },
+    {
+      icon: <Linkedin className="h-6 w-6 text-coffee" />,
+      title: "LinkedIn",
+      content: "Bugsy International Trade Ltd",
+      link: "https://www.linkedin.com/company/bugsy-international-trade-ltd/",
     },
   ];
 

@@ -32,7 +32,7 @@ const Footer = () => {
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+              <a href="https://www.linkedin.com/company/bugsy-international-trade-ltd/" target="_blank" rel="noopener noreferrer"
                 className="text-coffee-light hover:text-white transition-colors">
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
