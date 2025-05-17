@@ -5,10 +5,11 @@ import SectionHeading from '@/components/ui/section-heading';
 import RevealOnScroll from '@/components/ui/reveal-on-scroll';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { ArrowRight, Calendar, User, Tag } from 'lucide-react';
 
 const Blog = () => {
+  const navigate = useNavigate();
   const allCategories = ["All", "Coffee", "Tea", "Cocoa", "Industry News", "Producer Stories"];
   const [activeCategory, setActiveCategory] = useState("All");
   
@@ -129,7 +130,7 @@ const Blog = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
             {filteredPosts.map((post, index) => (
               <RevealOnScroll key={post.id} delay={index * 2} direction="up">
-                <Card className="overflow-hidden border-none shadow-lg h-full flex flex-col">
+                <Card className="overflow-hidden border-none shadow-lg h-full flex flex-col cursor-pointer" onClick={() => navigate(`/blog/${post.id}`)}>
                   <div className="relative h-48">
                     <img 
                       src={post.image} 
