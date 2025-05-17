@@ -1,0 +1,182 @@
+
+import Layout from '@/components/layout/Layout';
+import SectionHeading from '@/components/ui/section-heading';
+import RevealOnScroll from '@/components/ui/reveal-on-scroll';
+import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
+import { ArrowRight } from 'lucide-react';
+
+const Producers = () => {
+  const producerGroups = [
+    {
+      title: "Coffee Producers",
+      description: "Our network of coffee farmers across Uganda's prime growing regions.",
+      producers: [
+        {
+          name: "Rwenzori Mountain Coffee Cooperative",
+          location: "Western Uganda",
+          established: "2003",
+          members: "420+ smallholder farmers",
+          specialty: "Specialty Arabica Coffee",
+          description: "This cooperative of small-scale farmers produces exceptional arabica coffee at high altitudes in the Rwenzori Mountains. Their commitment to organic farming practices and community development has earned them recognition for both quality and sustainability."
+        },
+        {
+          name: "Bugisu Organic Farmers Association",
+          location: "Eastern Uganda",
+          established: "1998",
+          members: "350+ family farmers",
+          specialty: "Washed Arabica Coffee",
+          description: "Located on the slopes of Mt. Elgon, these farmers produce some of Uganda's most prized coffee. Their traditional processing methods combined with modern quality control result in beans with distinctive floral notes and bright acidity."
+        },
+        {
+          name: "Ankole Coffee Producers Cooperative",
+          location: "Southwestern Uganda",
+          established: "2010",
+          members: "280+ producers",
+          specialty: "Robusta Coffee",
+          description: "This cooperative specializes in high-quality robusta coffee, challenging the perception that robusta is inferior to arabica. Their innovative processing techniques result in clean, smooth cups with exceptional body and chocolate notes."
+        }
+      ]
+    },
+    {
+      title: "Tea Producers",
+      description: "Uganda's skilled tea farmers and processors create exceptional products for global markets.",
+      producers: [
+        {
+          name: "Ankole Tea Estates",
+          location: "Southwestern Uganda",
+          established: "1965",
+          members: "Estate-grown and 180+ outgrowers",
+          specialty: "Black Tea",
+          description: "This family-owned estate has been growing tea for three generations. Their high-elevation tea gardens produce robust, aromatic teas that are sought after by premium tea brands across Europe for their distinctive character and full-bodied flavor."
+        },
+        {
+          name: "Kabarole Women's Tea Initiative",
+          location: "Western Uganda",
+          established: "2012",
+          members: "140+ women farmers",
+          specialty: "Green and White Teas",
+          description: "This women-led cooperative focuses on specialty teas, creating exceptional green and white varieties. Their commitment to sustainable practices and women's empowerment has created both economic opportunities and superior tea products."
+        }
+      ]
+    },
+    {
+      title: "Cocoa Producers",
+      description: "Our cocoa partners maintain the highest quality standards while practicing sustainable agriculture.",
+      producers: [
+        {
+          name: "Bundibugyo Cocoa Collective",
+          location: "Western Uganda",
+          established: "2008",
+          members: "230+ cocoa farming families",
+          specialty: "Fine Flavor Cocoa",
+          description: "Located in Uganda's primary cocoa-growing region, this collective has elevated the quality of Ugandan cocoa through improved fermentation techniques and strict quality control. Their beans are now sought by craft chocolate makers across Europe."
+        },
+        {
+          name: "Semuliki Valley Cocoa Cooperative",
+          location: "Western Uganda",
+          established: "2014",
+          members: "175+ cocoa farmers",
+          specialty: "Organic Cocoa",
+          description: "Committed to organic and sustainable farming practices, this cooperative produces cocoa beans with complex flavor profiles. Their focus on environmental stewardship ensures the long-term health of both the ecosystem and their cocoa production."
+        }
+      ]
+    }
+  ];
+
+  return (
+    <Layout>
+      {/* Hero Section */}
+      <div className="relative bg-cream py-32">
+        <div className="absolute inset-0 overflow-hidden opacity-25">
+          <img 
+            src="/lovable-uploads/77bed13d-6c7e-4c8f-aee5-b4ee0239ed76.png" 
+            alt="Ugandan farmer" 
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="max-w-3xl">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-serif mb-6">
+              Our Producer Partners
+            </h1>
+            <p className="text-xl text-gray-700">
+              Meet the dedicated farmers and cooperatives behind Uganda's exceptional agricultural products.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Introduction */}
+      <section className="py-24 bg-white">
+        <div className="container mx-auto px-6">
+          <RevealOnScroll>
+            <div className="max-w-3xl mx-auto text-center">
+              <h2 className="text-3xl font-bold font-serif mb-6">Building Sustainable Partnerships</h2>
+              <p className="text-lg text-gray-700 mb-6">
+                At BugsyTrade, we believe that exceptional agricultural products begin with the producers. We're proud to partner with cooperatives, associations, and individual farmers who share our commitment to quality, sustainability, and ethical practices.
+              </p>
+              <p className="text-lg text-gray-700">
+                These partnerships are the foundation of our business, allowing us to bring Uganda's finest coffee, tea, and cocoa to European markets while ensuring that the benefits flow back to the communities where these products originate.
+              </p>
+            </div>
+          </RevealOnScroll>
+        </div>
+      </section>
+
+      {/* Producer Groups */}
+      {producerGroups.map((group, groupIndex) => (
+        <section key={groupIndex} className={`py-24 ${groupIndex % 2 === 0 ? 'bg-cream' : 'bg-white'}`}>
+          <div className="container mx-auto px-6">
+            <RevealOnScroll>
+              <SectionHeading
+                title={group.title}
+                subtitle={group.description}
+                centered
+              />
+            </RevealOnScroll>
+            
+            <div className="mt-16 space-y-16">
+              {group.producers.map((producer, producerIndex) => (
+                <RevealOnScroll key={producerIndex} delay={producerIndex * 2}>
+                  <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div className="p-8 lg:p-10">
+                      <h3 className="text-2xl font-serif font-bold mb-2">{producer.name}</h3>
+                      <div className="flex flex-wrap gap-x-6 gap-y-2 mb-6">
+                        <div className="text-coffee"><strong>Location:</strong> {producer.location}</div>
+                        <div className="text-coffee"><strong>Established:</strong> {producer.established}</div>
+                        <div className="text-coffee"><strong>Members:</strong> {producer.members}</div>
+                        <div className="text-coffee"><strong>Specialty:</strong> {producer.specialty}</div>
+                      </div>
+                      <p className="text-gray-700">{producer.description}</p>
+                    </div>
+                  </div>
+                </RevealOnScroll>
+              ))}
+            </div>
+          </div>
+        </section>
+      ))}
+
+      {/* CTA Section */}
+      <section className="py-16 bg-coffee text-white">
+        <div className="container mx-auto px-6 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold font-serif mb-6">Work With Our Producers</h2>
+          <p className="text-xl text-coffee-light max-w-2xl mx-auto mb-10">
+            Interested in sourcing high-quality Ugandan products for your business? Let's start a conversation.
+          </p>
+          <Link to="/contact">
+            <Button 
+              size="lg" 
+              className="bg-white/20 text-white border border-white hover:bg-white hover:text-coffee transition-all"
+            >
+              Contact Us <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </Link>
+        </div>
+      </section>
+    </Layout>
+  );
+};
+
+export default Producers;
