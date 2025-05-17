@@ -1,3 +1,4 @@
+
 import { Link } from 'react-router-dom';
 import { Instagram, Facebook, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -141,13 +142,24 @@ const Footer = () => {
             <p className="text-coffee-light text-sm">
               © {new Date().getFullYear()} Bugsy International Trade. All rights reserved.
             </p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link to="/privacy-policy" className="text-coffee-light hover:text-white text-sm transition-colors">
-                Privacy Policy
-              </Link>
-              <Link to="/terms-conditions" className="text-coffee-light hover:text-white text-sm transition-colors">
-                Terms & Conditions
-              </Link>
+            <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 mt-4 md:mt-0">
+              <p className="text-coffee-light text-sm">
+                Made by <a 
+                  href="https://syncsphereofficial.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-white hover:underline">
+                    SyncSphere
+                </a>
+              </p>
+              <div className="flex space-x-6">
+                <Link to="/privacy-policy" className="text-coffee-light hover:text-white text-sm transition-colors">
+                  Privacy Policy
+                </Link>
+                <Link to="/terms-conditions" className="text-coffee-light hover:text-white text-sm transition-colors">
+                  Terms & Conditions
+                </Link>
+              </div>
             </div>
           </div>
         </div>
