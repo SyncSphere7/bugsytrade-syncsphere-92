@@ -10,6 +10,7 @@ interface LayoutProps {
 }
 
 const Layout = ({ children }: LayoutProps) => {
+  // This component will only be rendered inside a Router context now
   const { pathname } = useLocation();
 
   return (
