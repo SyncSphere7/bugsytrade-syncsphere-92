@@ -21,16 +21,16 @@ const Hero = () => {
 
   return (
     <section className="relative h-screen min-h-[700px] flex items-center">
-      {/* Background Parallax Image */}
+      {/* Background Parallax Image - Brighter version */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat brightness-110"
         style={{ 
           backgroundImage: `url('/lovable-uploads/832530d3-5298-42e6-ba50-d9e7b79a44e4.png')`,
           transform: `translateY(${parallaxValue}px)`,
           backgroundPositionY: `${-parallaxValue * 0.5}px`,
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30" />
       </div>
       
       <div className="relative container mx-auto px-6 z-10">
@@ -39,8 +39,19 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
+            className="flex items-center mb-4 gap-3"
           >
-            <p className="text-coffee-light font-medium mb-4 text-lg md:text-xl">Taste the Altitude</p>
+            <img 
+              src="/lovable-uploads/af02a5f0-874d-47bc-8efa-6d232827a50c.png" 
+              alt="Bugsy International Trade Ltd" 
+              className="h-12 w-auto"
+            />
+            <p className="text-white font-medium text-lg md:text-xl">Bugsy International Trade Ltd</p>
+            <img 
+              src="https://flagcdn.com/w40/ug.png" 
+              alt="Uganda Flag" 
+              className="h-6 w-auto ml-2" 
+            />
           </motion.div>
           
           <motion.h1

@@ -11,11 +11,15 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsConditions from "./pages/TermsConditions";
 import Coffee from "./pages/products/Coffee";
 import Tea from "./pages/products/Tea";
-import Cocoa from "./pages/products/Cocoa";
+import Vanilla from "./pages/products/Vanilla";
+import CornFlour from "./pages/products/CornFlour";
 import Products from "./pages/products";
 import AboutUs from "./pages/AboutUs";
 import Producers from "./pages/Producers";
 import Services from "./pages/Services";
+import Gallery from "./pages/Gallery";
+import Movies from "./pages/Movies";
+import ImportProcess from "./pages/ImportProcess";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 
@@ -35,10 +39,14 @@ const App = () => (
           <Route path="/products" element={<Products />} />
           <Route path="/products/coffee" element={<Coffee />} />
           <Route path="/products/tea" element={<Tea />} />
-          <Route path="/products/cocoa" element={<Cocoa />} />
+          <Route path="/products/vanilla" element={<Vanilla />} />
+          <Route path="/products/corn-flour" element={<CornFlour />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/producers" element={<Producers />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/movies" element={<Movies />} />
+          <Route path="/import-process" element={<ImportProcess />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<BlogPost />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

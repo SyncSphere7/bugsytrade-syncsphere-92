@@ -61,24 +61,46 @@ const Producers = () => {
       ]
     },
     {
-      title: "Cocoa Producers",
-      description: "Our cocoa partners maintain the highest quality standards while practicing sustainable agriculture.",
+      title: "Vanilla Producers",
+      description: "Our vanilla partners maintain meticulous growing and curing standards for premium quality.",
       producers: [
         {
-          name: "Bundibugyo Cocoa Collective",
-          location: "Western Uganda",
+          name: "Mukono Vanilla Growers Association",
+          location: "Central Uganda",
           established: "2008",
-          members: "230+ cocoa farming families",
-          specialty: "Fine Flavor Cocoa",
-          description: "Located in Uganda's primary cocoa-growing region, this collective has elevated the quality of Ugandan cocoa through improved fermentation techniques and strict quality control. Their beans are now sought by craft chocolate makers across Europe."
+          members: "120+ vanilla farming families",
+          specialty: "Premium Vanilla Beans",
+          description: "This association specializes in traditional vanilla cultivation, with careful hand-pollination and meticulous post-harvest processing. Their beans are known for their exceptional length, moisture content, and complex flavor profile with notes of chocolate and cream."
         },
         {
-          name: "Semuliki Valley Cocoa Cooperative",
-          location: "Western Uganda",
+          name: "Vanilla Uganda Cooperative",
+          location: "Eastern Uganda",
           established: "2014",
-          members: "175+ cocoa farmers",
-          specialty: "Organic Cocoa",
-          description: "Committed to organic and sustainable farming practices, this cooperative produces cocoa beans with complex flavor profiles. Their focus on environmental stewardship ensures the long-term health of both the ecosystem and their cocoa production."
+          members: "85+ small-scale farmers",
+          specialty: "Organic Certified Vanilla",
+          description: "Committed to organic farming practices, this cooperative produces vanilla that meets strict international organic standards. Their sustainable farming approach and traditional curing methods result in beans with exceptional aroma and flavor complexity."
+        }
+      ]
+    },
+    {
+      title: "Corn Flour (Maize) Producers",
+      description: "Our corn flour partners combine traditional knowledge with modern milling for superior product quality.",
+      producers: [
+        {
+          name: "Masindi Maize Processors Association",
+          location: "Western Uganda",
+          established: "2011",
+          members: "200+ maize farmers and processors",
+          specialty: "Premium Corn Flour",
+          description: "This association brings together farmers and millers to produce high-quality corn flour. Their integrated approach ensures quality control from seed selection through cultivation, harvesting, and processing, resulting in flour with exceptional texture and flavor."
+        },
+        {
+          name: "Organic Grains Uganda",
+          location: "Northern Uganda",
+          established: "2015",
+          members: "150+ organic certified farmers",
+          specialty: "Organic Corn Flour",
+          description: "Specializing in chemical-free cultivation, this cooperative produces organic corn that's milled using both traditional stone-grinding and modern techniques. Their commitment to sustainability extends through their entire production chain."
         }
       ]
     }
@@ -114,10 +136,10 @@ const Producers = () => {
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-3xl font-bold font-serif mb-6">Building Sustainable Partnerships</h2>
               <p className="text-lg text-gray-700 mb-6">
-                At BugsyTrade, we believe that exceptional agricultural products begin with the producers. We're proud to partner with cooperatives, associations, and individual farmers who share our commitment to quality, sustainability, and ethical practices.
+                At Bugsy Trade, we believe that exceptional agricultural products begin with the producers. We're proud to partner with cooperatives, associations, and individual farmers who share our commitment to quality, sustainability, and ethical practices.
               </p>
               <p className="text-lg text-gray-700">
-                These partnerships are the foundation of our business, allowing us to bring Uganda's finest coffee, tea, and cocoa to European markets while ensuring that the benefits flow back to the communities where these products originate.
+                These partnerships are the foundation of our business, allowing us to bring Uganda's finest agricultural products to European markets while ensuring that the benefits flow back to the communities where these products originate.
               </p>
             </div>
           </RevealOnScroll>

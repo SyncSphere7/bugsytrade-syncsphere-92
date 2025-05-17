@@ -79,12 +79,12 @@ const Services = () => {
 
   return (
     <Layout>
-      {/* Hero Section */}
+      {/* Hero Section - Updated with joined hands image */}
       <div className="relative bg-cream py-32">
         <div className="absolute inset-0 overflow-hidden opacity-25">
           <img 
-            src="/lovable-uploads/cf6fd754-2a15-4f7d-b7b5-cdf97a580988.png" 
-            alt="Shipping containers" 
+            src="/lovable-uploads/b2b53896-79f4-4ebd-a14a-311bb4eff9a9.png" 
+            alt="Joined hands in business partnership" 
             className="w-full h-full object-cover"
           />
         </div>

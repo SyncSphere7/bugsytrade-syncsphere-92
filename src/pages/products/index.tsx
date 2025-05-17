@@ -21,10 +21,16 @@ const Products = () => {
       link: "/products/tea",
     },
     {
-      title: "Cocoa",
-      description: "Our premium cocoa is grown in Uganda's fertile soils, producing rich, complex flavors perfect for fine chocolate making.",
-      image: "/lovable-uploads/6a15ce1e-014d-4c9a-95e5-3fcfd19e6fce.png",
-      link: "/products/cocoa",
+      title: "Vanilla",
+      description: "Premium Ugandan vanilla, known for its exceptional flavor profile and aromatic qualities, perfect for culinary applications.",
+      image: "/lovable-uploads/77bed13d-6c7e-4c8f-aee5-b4ee0239ed76.png",
+      link: "/products/vanilla",
+    },
+    {
+      title: "Corn Flour",
+      description: "High-quality maize flour from Uganda's fertile lands, offering superior texture and taste for a variety of food applications.",
+      image: "/lovable-uploads/bef93f67-eee4-4f21-81bc-284a92e37ae0.png",
+      link: "/products/corn-flour",
     }
   ];
 
@@ -44,7 +50,7 @@ const Products = () => {
               Our Premium Products
             </h1>
             <p className="text-xl text-coffee-light">
-              Connecting European importers with Uganda's finest coffee, tea, and cocoa through sustainable and ethical trading practices.
+              Connecting European importers with Uganda's finest agricultural products through sustainable and ethical trading practices.
             </p>
           </div>
         </div>
@@ -54,10 +60,10 @@ const Products = () => {
         <div className="container mx-auto px-6">
           <SectionHeading 
             title="Exceptional Quality, Direct from Uganda"
-            subtitle="We specialize in high-quality Ugandan coffee, tea, and cocoa that meets the highest international standards."
+            subtitle="We specialize in high-quality Ugandan agricultural products that meet the highest international standards."
           />
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
             {products.map((product, index) => (
               <Card key={index} className="overflow-hidden border-none shadow-lg h-full transition-transform hover:scale-[1.02]">
                 <div className="relative h-64">

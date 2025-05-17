@@ -1,7 +1,6 @@
 
 import { Link } from 'react-router-dom';
 import { Instagram, Facebook, Linkedin, Mail, Phone, MapPin, Twitter } from 'lucide-react';
-import NewsletterForm from '@/components/newsletter/NewsletterForm';
 
 const Footer = () => {
   return (
@@ -16,10 +15,10 @@ const Footer = () => {
                 alt="Bugsy International Trade Logo" 
                 className="h-8 w-auto" 
               />
-              <span className="text-2xl font-serif font-bold">Bugsy International Trade</span>
+              <span className="text-2xl font-serif font-bold">Bugsy International Trade Ltd</span>
             </div>
             <p className="text-coffee-light max-w-xs">
-              Connecting Ugandan coffee, tea, and cocoa producers with European importers through sustainable and ethical trading.
+              Connecting Ugandan coffee, tea, vanilla, and corn flour producers with European importers through sustainable and ethical trading.
             </p>
             <div className="flex space-x-4">
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
@@ -45,7 +44,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick links - Format matching the reference image */}
+          {/* Quick links */}
           <div>
             <h3 className="text-lg font-semibold mb-6">Quick Links</h3>
             <ul className="space-y-4">
@@ -55,18 +54,23 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/products/coffee" className="text-coffee-light hover:text-white hover-underline transition-colors">
-                  Coffee
+                <Link to="/products" className="text-coffee-light hover:text-white hover-underline transition-colors">
+                  Products
                 </Link>
               </li>
               <li>
-                <Link to="/products/tea" className="text-coffee-light hover:text-white hover-underline transition-colors">
-                  Tea
+                <Link to="/producers" className="text-coffee-light hover:text-white hover-underline transition-colors">
+                  Producers
                 </Link>
               </li>
               <li>
-                <Link to="/products/cocoa" className="text-coffee-light hover:text-white hover-underline transition-colors">
-                  Cocoa
+                <Link to="/services" className="text-coffee-light hover:text-white hover-underline transition-colors">
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link to="/import-process" className="text-coffee-light hover:text-white hover-underline transition-colors">
+                  Import Process
                 </Link>
               </li>
               <li>
@@ -88,11 +92,11 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-coffee-light mt-1 shrink-0" />
-                <span>Kampala, Uganda</span>
+                <span>P.O.Box 183371, Kampala, Uganda</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-coffee-light shrink-0" />
-                <span>+256 786 700 022</span>
+                <span>WhatsApp: +256 786 700 022</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-coffee-light shrink-0" />
@@ -101,20 +105,48 @@ const Footer = () => {
             </ul>
           </div>
           
-          {/* Newsletter */}
+          {/* Useful Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-6">Newsletter</h3>
-            <p className="text-coffee-light mb-4">
-              Subscribe to our newsletter to receive updates on market trends, new producers, and special offers.
-            </p>
-            <NewsletterForm darkMode={true} />
+            <h3 className="text-lg font-semibold mb-6">Useful Links</h3>
+            <ul className="space-y-4">
+              <li>
+                <a 
+                  href="https://ugandacoffee.go.ug" 
+                  target="_blank"
+                  rel="noopener noreferrer" 
+                  className="text-coffee-light hover:text-white hover-underline transition-colors"
+                >
+                  Uganda Coffee Development Authority
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://www.agriculture.go.ug/the-ministry/"
+                  target="_blank"
+                  rel="noopener noreferrer"  
+                  className="text-coffee-light hover:text-white hover-underline transition-colors"
+                >
+                  Ministry of Agriculture Uganda
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://ugandacoffeefederation.org/resource-center/uganda-coffee-industry/"
+                  target="_blank"
+                  rel="noopener noreferrer"  
+                  className="text-coffee-light hover:text-white hover-underline transition-colors"
+                >
+                  Uganda Coffee Federation
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
         
         <div className="mt-12 pt-8 border-t border-coffee">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-coffee-light text-sm">
-              © {new Date().getFullYear()} Bugsy International Trade. All rights reserved.
+              © {new Date().getFullYear()} Bugsy International Trade Ltd. All rights reserved.
             </p>
             <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 mt-4 md:mt-0">
               <p className="text-coffee-light text-sm">

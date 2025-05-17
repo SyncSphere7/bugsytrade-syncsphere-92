@@ -61,11 +61,18 @@ const Products = () => {
       delay: 2
     },
     {
-      title: "Cocoa",
-      description: "Our premium cocoa is grown in Uganda's fertile soils, producing rich, complex flavors perfect for fine chocolate making.",
-      image: "/lovable-uploads/6a15ce1e-014d-4c9a-95e5-3fcfd19e6fce.png",
-      link: "/products/cocoa",
+      title: "Vanilla",
+      description: "Premium Ugandan vanilla, known for its exceptional flavor profile and aromatic qualities, perfect for culinary applications.",
+      image: "/lovable-uploads/77bed13d-6c7e-4c8f-aee5-b4ee0239ed76.png",
+      link: "/products/vanilla",
       delay: 4
+    },
+    {
+      title: "Corn Flour",
+      description: "High-quality maize flour from Uganda's fertile lands, offering superior texture and taste for a variety of food applications.",
+      image: "/lovable-uploads/bef93f67-eee4-4f21-81bc-284a92e37ae0.png",
+      link: "/products/corn-flour",
+      delay: 6
     }
   ];
   
@@ -75,12 +82,12 @@ const Products = () => {
         <RevealOnScroll>
           <SectionHeading
             title="Our Premium Products"
-            subtitle="We specialize in high-quality Ugandan coffee, tea, and cocoa that meets the highest international standards."
+            subtitle="We specialize in high-quality Ugandan agricultural products that meet the highest international standards."
             centered
           />
         </RevealOnScroll>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mt-12">
           {products.map((product, index) => (
             <ProductCard
               key={index}
@@ -94,7 +101,7 @@ const Products = () => {
         </div>
         
         <div className="mt-16 text-center">
-          <RevealOnScroll delay={6}>
+          <RevealOnScroll delay={8}>
             <Link to="/products">
               <Button size="lg" className="bg-coffee hover:bg-coffee-dark">
                 View All Products <ArrowRight className="ml-2 h-5 w-5" />
