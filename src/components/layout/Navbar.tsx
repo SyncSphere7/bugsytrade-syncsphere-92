@@ -141,7 +141,7 @@ const Navbar = () => {
             )}
           </button>
           
-          {/* Mobile menu - Improved */}
+          {/* Mobile menu */}
           <div 
             className={`fixed inset-0 bg-black/90 backdrop-blur-sm z-40 lg:hidden transition-opacity duration-300 ${
               mobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
