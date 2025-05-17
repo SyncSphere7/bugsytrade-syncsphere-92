@@ -49,7 +49,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold text-white mb-6 leading-tight"
           >
-            Connecting Uganda's Finest <span className="text-forest-light">Coffee</span> to The World
+            Connecting Uganda's Finest <span className="text-forest-light">Agricultural Products</span> to The World
           </motion.h1>
           
           <motion.p
