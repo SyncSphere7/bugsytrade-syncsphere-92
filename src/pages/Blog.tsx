@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import Layout from '@/components/layout/Layout';
 import SectionHeading from '@/components/ui/section-heading';
@@ -7,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { Link, useNavigate } from 'react-router-dom';
 import { ArrowRight, Calendar, User, Tag } from 'lucide-react';
+import NewsletterForm from '@/components/newsletter/NewsletterForm';
 
 const Blog = () => {
   const navigate = useNavigate();
@@ -192,17 +192,9 @@ const Blog = () => {
               <p className="text-lg text-gray-700 mb-8">
                 Stay updated with the latest news, insights, and stories from Uganda's agricultural export sector.
               </p>
-              <form className="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
-                <input
-                  type="email"
-                  placeholder="Your email address"
-                  className="flex-grow px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-coffee focus:border-transparent"
-                  required
-                />
-                <Button className="bg-coffee hover:bg-coffee-dark whitespace-nowrap">
-                  Subscribe
-                </Button>
-              </form>
+              <div className="max-w-lg mx-auto">
+                <NewsletterForm />
+              </div>
             </div>
           </RevealOnScroll>
         </div>

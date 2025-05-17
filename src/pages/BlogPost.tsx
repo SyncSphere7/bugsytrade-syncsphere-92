@@ -1,11 +1,11 @@
-
 import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import Layout from '@/components/layout/Layout';
 import SectionHeading from '@/components/ui/section-heading';
 import { Button } from '@/components/ui/button';
 import RevealOnScroll from '@/components/ui/reveal-on-scroll';
-import { ArrowLeft, Calendar, User, Tag } from 'lucide-react';
+import { ArrowLeft, Calendar, User } from 'lucide-react';
+import NewsletterForm from '@/components/newsletter/NewsletterForm';
 
 interface BlogPostData {
   id: number;
@@ -541,17 +541,9 @@ const BlogPost = () => {
               <p className="text-lg text-gray-700 mb-8">
                 Subscribe to our newsletter to receive the latest insights on Uganda's agricultural export sector.
               </p>
-              <form className="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
-                <input
-                  type="email"
-                  placeholder="Your email address"
-                  className="flex-grow px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-coffee focus:border-transparent"
-                  required
-                />
-                <Button className="bg-coffee hover:bg-coffee-dark whitespace-nowrap">
-                  Subscribe
-                </Button>
-              </form>
+              <div className="max-w-lg mx-auto">
+                <NewsletterForm />
+              </div>
             </div>
           </RevealOnScroll>
         </div>

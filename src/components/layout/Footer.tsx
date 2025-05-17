@@ -1,29 +1,9 @@
 
 import { Link } from 'react-router-dom';
 import { Instagram, Facebook, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { useToast } from "@/hooks/use-toast";
+import NewsletterForm from '@/components/newsletter/NewsletterForm';
 
 const Footer = () => {
-  const { toast } = useToast();
-  
-  const handleSubscribe = (e: React.FormEvent) => {
-    e.preventDefault();
-    const form = e.target as HTMLFormElement;
-    const email = (form.elements.namedItem('email') as HTMLInputElement).value;
-    
-    // Simulating API call
-    setTimeout(() => {
-      toast({
-        title: "Subscribed successfully!",
-        description: "Thank you for subscribing to our newsletter.",
-        duration: 5000,
-      });
-      form.reset();
-    }, 500);
-  };
-
   return (
     <footer className="bg-coffee-dark text-white">
       <div className="container mx-auto p-8 md:p-12">
@@ -122,18 +102,7 @@ const Footer = () => {
             <p className="text-coffee-light mb-4">
               Subscribe to our newsletter to receive updates on market trends, new producers, and special offers.
             </p>
-            <form onSubmit={handleSubscribe} className="space-y-3">
-              <Input 
-                type="email" 
-                name="email" 
-                placeholder="Your email address" 
-                required 
-                className="bg-coffee text-white placeholder-coffee-light border-coffee" 
-              />
-              <Button type="submit" className="w-full bg-forest hover:bg-forest-dark text-white">
-                Subscribe
-              </Button>
-            </form>
+            <NewsletterForm darkMode={true} />
           </div>
         </div>
         
