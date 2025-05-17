@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, Coffee, ChevronDown } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
@@ -41,7 +41,11 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-2 z-50">
-            <Coffee className={`h-8 w-8 ${isScrolled ? 'text-coffee' : 'text-coffee-light'}`} strokeWidth={1.5} />
+            <img 
+              src="/lovable-uploads/af02a5f0-874d-47bc-8efa-6d232827a50c.png" 
+              alt="BugsyTrade Logo" 
+              className="h-10 w-auto" 
+            />
             <span className={`text-2xl font-serif font-bold ${isScrolled ? 'text-coffee-dark' : 'text-white'}`}>
               BugsyTrade
             </span>

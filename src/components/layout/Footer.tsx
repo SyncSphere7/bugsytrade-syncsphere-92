@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import { Coffee, Instagram, Facebook, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
+import { Instagram, Facebook, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
@@ -31,7 +31,11 @@ const Footer = () => {
           {/* Company info */}
           <div className="space-y-6">
             <div className="flex items-center space-x-3">
-              <Coffee className="h-8 w-8 text-coffee-light" strokeWidth={1.5} />
+              <img 
+                src="/lovable-uploads/af02a5f0-874d-47bc-8efa-6d232827a50c.png" 
+                alt="BugsyTrade Logo" 
+                className="h-8 w-auto" 
+              />
               <span className="text-2xl font-serif font-bold">BugsyTrade</span>
             </div>
             <p className="text-coffee-light max-w-xs">
