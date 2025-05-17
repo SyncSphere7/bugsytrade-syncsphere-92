@@ -123,7 +123,7 @@ const ContactPage = () => {
               style={{ border: 0 }} 
               allowFullScreen 
               loading="lazy" 
-              title="BugsyTrade Location"
+              title="Bugsy International Trade Location"
             ></iframe>
           </div>
         </div>

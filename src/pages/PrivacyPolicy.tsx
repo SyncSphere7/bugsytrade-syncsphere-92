@@ -14,7 +14,7 @@ const PrivacyPolicy = () => {
             <section>
               <h2 className="text-2xl font-serif text-coffee-dark">1. Introduction</h2>
               <p>
-                At BugsyTrade, we take your privacy very seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our services. Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the site.
+                At Bugsy International Trade, we take your privacy very seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our services. Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the site.
               </p>
             </section>
 
@@ -89,7 +89,7 @@ const PrivacyPolicy = () => {
                 If you have questions or comments about this Privacy Policy, please contact us at:
               </p>
               <address className="mt-3 not-italic">
-                <p>BugsyTrade</p>
+                <p>Bugsy International Trade</p>
                 <p>123 Coffee Rd, Kampala, Uganda</p>
                 <p>Email: info@bugsytrade.com</p>
                 <p>Phone: +256 123 456 789</p>

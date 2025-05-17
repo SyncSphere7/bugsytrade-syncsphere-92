@@ -14,7 +14,7 @@ const TermsConditions = () => {
             <section>
               <h2 className="text-2xl font-serif text-coffee-dark">1. Agreement to Terms</h2>
               <p>
-                These Terms and Conditions constitute a legally binding agreement made between you and BugsyTrade, concerning your access to and use of the website as well as any other media form, media channel, mobile website or mobile application related, linked, or otherwise connected thereto. You agree that by accessing the Site, you have read, understood, and agree to be bound by all of these Terms and Conditions.
+                These Terms and Conditions constitute a legally binding agreement made between you and Bugsy International Trade, concerning your access to and use of the website as well as any other media form, media channel, mobile website or mobile application related, linked, or otherwise connected thereto. You agree that by accessing the Site, you have read, understood, and agree to be bound by all of these Terms and Conditions.
               </p>
               <p className="mt-3">
                 IF YOU DO NOT AGREE WITH ALL OF THESE TERMS AND CONDITIONS, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING THE SITE AND YOU MUST DISCONTINUE USE IMMEDIATELY.
@@ -86,7 +86,7 @@ const TermsConditions = () => {
                 Questions about the Terms and Conditions should be sent to us at:
               </p>
               <address className="mt-3 not-italic">
-                <p>BugsyTrade</p>
+                <p>Bugsy International Trade</p>
                 <p>123 Coffee Rd, Kampala, Uganda</p>
                 <p>Email: info@bugsytrade.com</p>
                 <p>Phone: +256 123 456 789</p>

@@ -33,10 +33,10 @@ const Footer = () => {
             <div className="flex items-center space-x-3">
               <img 
                 src="/lovable-uploads/af02a5f0-874d-47bc-8efa-6d232827a50c.png" 
-                alt="BugsyTrade Logo" 
+                alt="Bugsy International Trade Logo" 
                 className="h-8 w-auto" 
               />
-              <span className="text-2xl font-serif font-bold">BugsyTrade</span>
+              <span className="text-2xl font-serif font-bold">Bugsy International Trade</span>
             </div>
             <p className="text-coffee-light max-w-xs">
               Connecting Ugandan coffee, tea, and cocoa producers with European importers through sustainable and ethical trading.
@@ -140,7 +140,7 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-coffee">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-coffee-light text-sm">
-              © {new Date().getFullYear()} BugsyTrade. All rights reserved.
+              © {new Date().getFullYear()} Bugsy International Trade. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link to="/privacy-policy" className="text-coffee-light hover:text-white text-sm transition-colors">
