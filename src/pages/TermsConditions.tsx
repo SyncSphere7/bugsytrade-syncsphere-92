@@ -87,9 +87,9 @@ const TermsConditions = () => {
               </p>
               <address className="mt-3 not-italic">
                 <p>Bugsy International Trade</p>
-                <p>123 Coffee Rd, Kampala, Uganda</p>
-                <p>Email: info@bugsytrade.com</p>
-                <p>Phone: +256 123 456 789</p>
+                <p>Kampala, Uganda</p>
+                <p>Email: office@bugsytrade.com</p>
+                <p>Phone: +256 786 700 022</p>
               </address>
             </section>
           </div>

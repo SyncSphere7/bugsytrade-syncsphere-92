@@ -10,19 +10,19 @@ const ContactPage = () => {
     {
       icon: <Mail className="h-6 w-6 text-coffee" />,
       title: "Email",
-      content: "info@bugsytrade.com",
-      link: "mailto:info@bugsytrade.com",
+      content: "office@bugsytrade.com",
+      link: "mailto:office@bugsytrade.com",
     },
     {
       icon: <Phone className="h-6 w-6 text-coffee" />,
       title: "Phone",
-      content: "+256 123 456 789",
-      link: "tel:+256123456789",
+      content: "+256 786 700 022",
+      link: "tel:+256786700022",
     },
     {
       icon: <MapPin className="h-6 w-6 text-coffee" />,
       title: "Address",
-      content: "123 Coffee Rd, Kampala, Uganda",
+      content: "Kampala, Uganda",
       link: "https://maps.google.com/?q=Kampala,Uganda",
     },
     {

@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { Instagram, Facebook, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -103,15 +102,15 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-coffee-light mt-1 shrink-0" />
-                <span>123 Coffee Rd, Kampala, Uganda</span>
+                <span>Kampala, Uganda</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-coffee-light shrink-0" />
-                <span>+256 123 456 789</span>
+                <span>+256 786 700 022</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-coffee-light shrink-0" />
-                <span>info@bugsytrade.com</span>
+                <span>office@bugsytrade.com</span>
               </li>
             </ul>
           </div>
