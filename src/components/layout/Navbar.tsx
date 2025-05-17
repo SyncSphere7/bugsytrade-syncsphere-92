@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 
@@ -8,6 +8,11 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [productsDropdownOpen, setProductsDropdownOpen] = useState(false);
+  const location = useLocation();
+
+  // Define which routes should have an initially visible navbar
+  const routesWithVisibleNavbar = ['/producers', '/services', '/about', '/blog'];
+  const isRouteWithVisibleNavbar = routesWithVisibleNavbar.includes(location.pathname);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,7 +38,7 @@ const Navbar = () => {
   return (
     <header 
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        isScrolled 
+        isScrolled || isRouteWithVisibleNavbar
           ? 'bg-white/95 dark:bg-gray-900/95 shadow-md py-3 backdrop-blur-sm' 
           : 'bg-transparent py-6'
       }`}
@@ -52,7 +57,7 @@ const Navbar = () => {
             <Link 
               to="/" 
               className={`hover-underline text-base font-medium transition ${
-                isScrolled ? 'text-gray-800 dark:text-gray-200' : 'text-white'
+                isScrolled || isRouteWithVisibleNavbar ? 'text-gray-800 dark:text-gray-200' : 'text-white'
               }`}
             >
               Home
@@ -60,7 +65,7 @@ const Navbar = () => {
             <div className="relative group">
               <button 
                 className={`flex items-center text-base font-medium transition hover-underline ${
-                  isScrolled ? 'text-gray-800 dark:text-gray-200' : 'text-white'
+                  isScrolled || isRouteWithVisibleNavbar ? 'text-gray-800 dark:text-gray-200' : 'text-white'
                 }`}
                 onClick={toggleProductsDropdown}
               >
@@ -77,7 +82,7 @@ const Navbar = () => {
             <Link 
               to="/producers" 
               className={`hover-underline text-base font-medium transition ${
-                isScrolled ? 'text-gray-800 dark:text-gray-200' : 'text-white'
+                isScrolled || isRouteWithVisibleNavbar ? 'text-gray-800 dark:text-gray-200' : 'text-white'
               }`}
             >
               Producers
@@ -85,7 +90,7 @@ const Navbar = () => {
             <Link 
               to="/services" 
               className={`hover-underline text-base font-medium transition ${
-                isScrolled ? 'text-gray-800 dark:text-gray-200' : 'text-white'
+                isScrolled || isRouteWithVisibleNavbar ? 'text-gray-800 dark:text-gray-200' : 'text-white'
               }`}
             >
               Services
@@ -93,7 +98,7 @@ const Navbar = () => {
             <Link 
               to="/about" 
               className={`hover-underline text-base font-medium transition ${
-                isScrolled ? 'text-gray-800 dark:text-gray-200' : 'text-white'
+                isScrolled || isRouteWithVisibleNavbar ? 'text-gray-800 dark:text-gray-200' : 'text-white'
               }`}
             >
               About
@@ -101,7 +106,7 @@ const Navbar = () => {
             <Link 
               to="/blog" 
               className={`hover-underline text-base font-medium transition ${
-                isScrolled ? 'text-gray-800 dark:text-gray-200' : 'text-white'
+                isScrolled || isRouteWithVisibleNavbar ? 'text-gray-800 dark:text-gray-200' : 'text-white'
               }`}
             >
               Blog
@@ -110,7 +115,7 @@ const Navbar = () => {
           
           <div className="hidden lg:block">
             <Link to="/contact">
-              <Button variant={isScrolled ? "default" : "outline"} className="btn-hover-slide">
+              <Button variant={isScrolled || isRouteWithVisibleNavbar ? "default" : "outline"} className="btn-hover-slide">
                 Contact Us
               </Button>
             </Link>
@@ -122,9 +127,9 @@ const Navbar = () => {
             aria-label="Toggle menu"
           >
             {mobileMenuOpen ? (
-              <X className={`h-6 w-6 ${isScrolled ? 'text-gray-800 dark:text-gray-200' : 'text-white'}`} />
+              <X className={`h-6 w-6 ${isScrolled || isRouteWithVisibleNavbar ? 'text-gray-800 dark:text-gray-200' : 'text-white'}`} />
             ) : (
-              <Menu className={`h-6 w-6 ${isScrolled ? 'text-gray-800 dark:text-gray-200' : 'text-white'}`} />
+              <Menu className={`h-6 w-6 ${isScrolled || isRouteWithVisibleNavbar ? 'text-gray-800 dark:text-gray-200' : 'text-white'}`} />
             )}
           </button>
           
