@@ -162,7 +162,10 @@ const Cocoa = () => {
           <p className="text-xl text-amber-200 max-w-2xl mx-auto mb-10">
             Contact us to discuss your specific requirements, volume needs, and how we can help bring the distinctive character of Ugandan cocoa to your products.
           </p>
-          <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-amber-900">
+          <Button 
+            size="lg" 
+            className="bg-white/20 text-white border border-white hover:bg-white hover:text-amber-900 transition-all"
+          >
             Get in Touch
           </Button>
         </div>

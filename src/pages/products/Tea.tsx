@@ -162,7 +162,10 @@ const Tea = () => {
           <p className="text-xl text-forest-light max-w-2xl mx-auto mb-10">
             Contact us to discuss your specific requirements, volume needs, and how we can help bring the distinctive character of Ugandan tea to your customers.
           </p>
-          <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-forest">
+          <Button 
+            size="lg" 
+            className="bg-white/20 text-white border border-white hover:bg-white hover:text-forest transition-all"
+          >
             Get in Touch
           </Button>
         </div>
