@@ -4,6 +4,7 @@ import SectionHeading from '@/components/ui/section-heading';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Package, Coffee as BeanIcon } from "lucide-react";
+import { Link } from 'react-router-dom';
 
 const Cocoa = () => {
   const cocoaProducts = [
@@ -162,12 +163,14 @@ const Cocoa = () => {
           <p className="text-xl text-amber-200 max-w-2xl mx-auto mb-10">
             Contact us to discuss your specific requirements, volume needs, and how we can help bring the distinctive character of Ugandan cocoa to your products.
           </p>
-          <Button 
-            size="lg" 
-            className="bg-white/20 text-white border border-white hover:bg-white hover:text-amber-900 transition-all"
-          >
-            Get in Touch
-          </Button>
+          <Link to="/contact">
+            <Button 
+              size="lg" 
+              className="bg-white/20 text-white border border-white hover:bg-white hover:text-amber-900 transition-all"
+            >
+              Get in Touch
+            </Button>
+          </Link>
         </div>
       </section>
     </Layout>

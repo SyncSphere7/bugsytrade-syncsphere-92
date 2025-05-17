@@ -4,6 +4,7 @@ import SectionHeading from '@/components/ui/section-heading';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Package, Coffee as CoffeeIcon } from "lucide-react";
+import { Link } from 'react-router-dom';
 
 const Coffee = () => {
   const coffeeVarieties = [
@@ -162,12 +163,14 @@ const Coffee = () => {
           <p className="text-xl text-coffee-light max-w-2xl mx-auto mb-10">
             Contact us to discuss your specific requirements, volume needs, and how we can help bring the distinctive flavor of Ugandan coffee to your customers.
           </p>
-          <Button 
-            size="lg" 
-            className="bg-white/20 text-white border border-white hover:bg-white hover:text-coffee transition-all"
-          >
-            Get in Touch
-          </Button>
+          <Link to="/contact">
+            <Button 
+              size="lg" 
+              className="bg-white/20 text-white border border-white hover:bg-white hover:text-coffee transition-all"
+            >
+              Get in Touch
+            </Button>
+          </Link>
         </div>
       </section>
     </Layout>
