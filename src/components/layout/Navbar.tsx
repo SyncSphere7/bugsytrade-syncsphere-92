@@ -49,8 +49,17 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-4 md:px-6">
-        <div className="flex items-center justify-center">
-          {/* Desktop navigation */}
+        <div className="flex items-center justify-between">
+          {/* Logo */}
+          <Link to="/" className="flex items-center">
+            <img 
+              src="/lovable-uploads/af02a5f0-874d-47bc-8efa-6d232827a50c.png" 
+              alt="Logo" 
+              className="h-10 w-auto" 
+            />
+          </Link>
+          
+          {/* Desktop navigation - Centered menu */}
           <nav className="hidden lg:flex items-center space-x-8">
             <Link 
               to="/" 
@@ -100,27 +109,20 @@ const Navbar = () => {
             >
               Blog
             </Link>
-            
-            <Link to="/contact" className="ml-4">
-              <Button 
-                variant={isScrolled || isRouteWithVisibleNavbar ? "default" : "outline"} 
-                className={`btn-hover-slide ${!isScrolled && !isRouteWithVisibleNavbar ? 'text-white border-white hover:text-white' : ''}`}
-              >
-                Contact Us
-              </Button>
-            </Link>
           </nav>
           
-          {/* Mobile menu button - kept at left side for mobile */}
-          <div className="lg:hidden flex w-full justify-between items-center">
-            <Link to="/" className="flex items-center z-50">
-              <img 
-                src="/lovable-uploads/af02a5f0-874d-47bc-8efa-6d232827a50c.png" 
-                alt="Logo" 
-                className="h-10 w-auto" 
-              />
-            </Link>
-            
+          {/* Contact Us button - Right aligned */}
+          <Link to="/contact" className="hidden lg:block">
+            <Button 
+              variant={isScrolled || isRouteWithVisibleNavbar ? "default" : "outline"} 
+              className={`rounded-md ${!isScrolled && !isRouteWithVisibleNavbar ? 'text-white border-white hover:text-white bg-transparent hover:bg-white/20' : ''}`}
+            >
+              Contact Us
+            </Button>
+          </Link>
+          
+          {/* Mobile menu button - kept at right side for mobile */}
+          <div className="lg:hidden">
             <button 
               className="flex items-center space-x-2"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -134,94 +136,94 @@ const Navbar = () => {
               )}
             </button>
           </div>
-          
-          {/* Mobile menu */}
-          <div 
-            className={`fixed inset-0 bg-coffee-dark z-40 lg:hidden transition-opacity duration-300 ${
-              mobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
-            }`}
+        </div>
+      </div>
+      
+      {/* Mobile menu - Slide in from right */}
+      <div 
+        className={`fixed inset-0 bg-coffee-dark z-40 lg:hidden transition-opacity duration-300 ${
+          mobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+        }`}
+      >
+        <div className="flex flex-col h-full justify-center items-center space-y-6 p-6 overflow-y-auto">
+          <Link 
+            to="/" 
+            className="text-xl font-medium text-white hover:text-primary transition"
+            onClick={() => setMobileMenuOpen(false)}
           >
-            <div className="flex flex-col h-full justify-center items-center space-y-6 p-6 overflow-y-auto">
-              <Link 
-                to="/" 
-                className="text-xl font-medium text-white hover:text-primary transition"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Home
-              </Link>
-              
-              <div className="flex flex-col items-center space-y-4">
-                <span className="text-xl font-medium text-white">Products</span>
-                <Link 
-                  to="/products/coffee" 
-                  className="text-lg font-medium text-primary hover:text-white transition"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Coffee
-                </Link>
-                <Link 
-                  to="/products/tea" 
-                  className="text-lg font-medium text-primary hover:text-white transition"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Tea
-                </Link>
-                <Link 
-                  to="/products/cocoa" 
-                  className="text-lg font-medium text-primary hover:text-white transition"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Cocoa
-                </Link>
-              </div>
-              
-              <Link 
-                to="/producers" 
-                className="text-xl font-medium text-white hover:text-primary transition"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Producers
-              </Link>
-              
-              <Link 
-                to="/services" 
-                className="text-xl font-medium text-white hover:text-primary transition"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Services
-              </Link>
-              
-              <Link 
-                to="/about" 
-                className="text-xl font-medium text-white hover:text-primary transition"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                About
-              </Link>
-              
-              <Link 
-                to="/blog" 
-                className="text-xl font-medium text-white hover:text-primary transition"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Blog
-              </Link>
-              
-              <Link 
-                to="/contact" 
-                className="mt-4"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                <Button 
-                  variant="outline" 
-                  size="lg"
-                  className="text-lg border-2 border-white text-white bg-transparent hover:bg-white hover:text-black transition-colors"
-                >
-                  Contact Us
-                </Button>
-              </Link>
-            </div>
+            Home
+          </Link>
+          
+          <div className="flex flex-col items-center space-y-4">
+            <span className="text-xl font-medium text-white">Products</span>
+            <Link 
+              to="/products/coffee" 
+              className="text-lg font-medium text-primary hover:text-white transition"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Coffee
+            </Link>
+            <Link 
+              to="/products/tea" 
+              className="text-lg font-medium text-primary hover:text-white transition"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Tea
+            </Link>
+            <Link 
+              to="/products/cocoa" 
+              className="text-lg font-medium text-primary hover:text-white transition"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Cocoa
+            </Link>
           </div>
+          
+          <Link 
+            to="/producers" 
+            className="text-xl font-medium text-white hover:text-primary transition"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Producers
+          </Link>
+          
+          <Link 
+            to="/services" 
+            className="text-xl font-medium text-white hover:text-primary transition"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Services
+          </Link>
+          
+          <Link 
+            to="/about" 
+            className="text-xl font-medium text-white hover:text-primary transition"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            About
+          </Link>
+          
+          <Link 
+            to="/blog" 
+            className="text-xl font-medium text-white hover:text-primary transition"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Blog
+          </Link>
+          
+          <Link 
+            to="/contact" 
+            className="mt-4"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            <Button 
+              variant="outline" 
+              size="lg"
+              className="text-lg border-2 rounded-md border-white text-white bg-transparent hover:bg-white hover:text-black transition-colors"
+            >
+              Contact Us
+            </Button>
+          </Link>
         </div>
       </div>
     </header>
