@@ -35,6 +35,14 @@ const Navbar = () => {
     setProductsDropdownOpen(!productsDropdownOpen);
   };
 
+  // Determine the text color based on scroll state and route
+  const getTextColorClass = () => {
+    if (isScrolled || isRouteWithVisibleNavbar) {
+      return 'text-gray-800 dark:text-gray-200';
+    }
+    return 'text-white';
+  };
+
   return (
     <header 
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
@@ -56,17 +64,13 @@ const Navbar = () => {
           <nav className="hidden lg:flex items-center space-x-8">
             <Link 
               to="/" 
-              className={`hover-underline text-base font-medium transition ${
-                isScrolled || isRouteWithVisibleNavbar ? 'text-gray-800 dark:text-gray-200' : 'text-white'
-              }`}
+              className={`hover-underline text-base font-medium transition ${getTextColorClass()}`}
             >
               Home
             </Link>
             <div className="relative group">
               <button 
-                className={`flex items-center text-base font-medium transition hover-underline ${
-                  isScrolled || isRouteWithVisibleNavbar ? 'text-gray-800 dark:text-gray-200' : 'text-white'
-                }`}
+                className={`flex items-center text-base font-medium transition hover-underline ${getTextColorClass()}`}
                 onClick={toggleProductsDropdown}
               >
                 Products <ChevronDown className="ml-1 h-4 w-4" />
@@ -81,33 +85,25 @@ const Navbar = () => {
             </div>
             <Link 
               to="/producers" 
-              className={`hover-underline text-base font-medium transition ${
-                isScrolled || isRouteWithVisibleNavbar ? 'text-gray-800 dark:text-gray-200' : 'text-white'
-              }`}
+              className={`hover-underline text-base font-medium transition ${getTextColorClass()}`}
             >
               Producers
             </Link>
             <Link 
               to="/services" 
-              className={`hover-underline text-base font-medium transition ${
-                isScrolled || isRouteWithVisibleNavbar ? 'text-gray-800 dark:text-gray-200' : 'text-white'
-              }`}
+              className={`hover-underline text-base font-medium transition ${getTextColorClass()}`}
             >
               Services
             </Link>
             <Link 
               to="/about" 
-              className={`hover-underline text-base font-medium transition ${
-                isScrolled || isRouteWithVisibleNavbar ? 'text-gray-800 dark:text-gray-200' : 'text-white'
-              }`}
+              className={`hover-underline text-base font-medium transition ${getTextColorClass()}`}
             >
               About
             </Link>
             <Link 
               to="/blog" 
-              className={`hover-underline text-base font-medium transition ${
-                isScrolled || isRouteWithVisibleNavbar ? 'text-gray-800 dark:text-gray-200' : 'text-white'
-              }`}
+              className={`hover-underline text-base font-medium transition ${getTextColorClass()}`}
             >
               Blog
             </Link>
@@ -115,7 +111,10 @@ const Navbar = () => {
           
           <div className="hidden lg:block">
             <Link to="/contact">
-              <Button variant={isScrolled || isRouteWithVisibleNavbar ? "default" : "outline"} className="btn-hover-slide">
+              <Button 
+                variant={isScrolled || isRouteWithVisibleNavbar ? "default" : "outline"} 
+                className={`btn-hover-slide ${!isScrolled && !isRouteWithVisibleNavbar ? 'text-white border-white hover:text-white' : ''}`}
+              >
                 Contact Us
               </Button>
             </Link>
@@ -127,9 +126,9 @@ const Navbar = () => {
             aria-label="Toggle menu"
           >
             {mobileMenuOpen ? (
-              <X className={`h-6 w-6 ${isScrolled || isRouteWithVisibleNavbar ? 'text-gray-800 dark:text-gray-200' : 'text-white'}`} />
+              <X className={`h-6 w-6 ${getTextColorClass()}`} />
             ) : (
-              <Menu className={`h-6 w-6 ${isScrolled || isRouteWithVisibleNavbar ? 'text-gray-800 dark:text-gray-200' : 'text-white'}`} />
+              <Menu className={`h-6 w-6 ${getTextColorClass()}`} />
             )}
           </button>
           
