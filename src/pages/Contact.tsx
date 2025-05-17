@@ -4,6 +4,8 @@ import SectionHeading from '@/components/ui/section-heading';
 import ContactForm from '@/components/contact/ContactForm';
 import { Mail, Phone, MapPin, Clock } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { Card, CardContent } from '@/components/ui/card';
+import NewsletterForm from '@/components/newsletter/NewsletterForm';
 
 const ContactPage = () => {
   const contactInfo = [
@@ -70,6 +72,21 @@ const ContactPage = () => {
                 subtitle="Fill out the form below and we'll get back to you as soon as possible."
               />
               <ContactForm />
+              
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                className="mt-12"
+              >
+                <Card className="bg-cream">
+                  <CardContent className="pt-6">
+                    <h3 className="text-xl font-medium mb-4">Stay Updated</h3>
+                    <p className="text-gray-600 mb-4">Subscribe to our newsletter to receive updates on new products, market trends, and special offers.</p>
+                    <NewsletterForm />
+                  </CardContent>
+                </Card>
+              </motion.div>
             </div>
 
             <div className="lg:col-span-1">
