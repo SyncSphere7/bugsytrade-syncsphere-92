@@ -3,6 +3,12 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -68,21 +74,24 @@ const Navbar = () => {
             >
               Home
             </Link>
-            <div className="relative group">
-              <button 
-                className={`flex items-center text-base font-medium transition hover-underline ${getTextColorClass()}`}
-                onClick={toggleProductsDropdown}
-              >
+            
+            <DropdownMenu>
+              <DropdownMenuTrigger className={`flex items-center text-base font-medium transition hover-underline ${getTextColorClass()}`}>
                 Products <ChevronDown className="ml-1 h-4 w-4" />
-              </button>
-              <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-right">
-                <div className="py-1" role="menu" aria-orientation="vertical">
-                  <Link to="/products/coffee" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">Coffee</Link>
-                  <Link to="/products/tea" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">Tea</Link>
-                  <Link to="/products/cocoa" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">Cocoa</Link>
-                </div>
-              </div>
-            </div>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="bg-white dark:bg-gray-800">
+                <DropdownMenuItem>
+                  <Link to="/products/coffee" className="w-full">Coffee</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem>
+                  <Link to="/products/tea" className="w-full">Tea</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem>
+                  <Link to="/products/cocoa" className="w-full">Cocoa</Link>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+            
             <Link 
               to="/producers" 
               className={`hover-underline text-base font-medium transition ${getTextColorClass()}`}
@@ -132,16 +141,16 @@ const Navbar = () => {
             )}
           </button>
           
-          {/* Mobile menu */}
+          {/* Mobile menu - Improved */}
           <div 
-            className={`fixed inset-0 bg-black bg-opacity-80 backdrop-blur-sm z-40 lg:hidden transition-opacity duration-300 ${
+            className={`fixed inset-0 bg-black/90 backdrop-blur-sm z-40 lg:hidden transition-opacity duration-300 ${
               mobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
             }`}
           >
-            <div className="flex flex-col h-full justify-center items-center space-y-8 p-6">
+            <div className="flex flex-col h-full justify-center items-center space-y-6 p-6 overflow-y-auto">
               <Link 
                 to="/" 
-                className="text-2xl font-medium text-white hover:text-coffee-light transition"
+                className="text-xl font-medium text-white hover:text-primary transition"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Home
@@ -149,7 +158,7 @@ const Navbar = () => {
               
               <div className="flex flex-col items-center">
                 <button 
-                  className="text-2xl font-medium text-white hover:text-coffee-light transition flex items-center"
+                  className="text-xl font-medium text-white hover:text-primary transition flex items-center"
                   onClick={toggleProductsDropdown}
                 >
                   Products <ChevronDown className={`ml-1 h-5 w-5 transition-transform ${productsDropdownOpen ? 'rotate-180' : ''}`} />
@@ -159,21 +168,21 @@ const Navbar = () => {
                   <div className="flex flex-col items-center mt-3 space-y-3">
                     <Link 
                       to="/products/coffee" 
-                      className="text-xl font-medium text-coffee-light hover:text-white transition"
+                      className="text-lg font-medium text-primary hover:text-white transition"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       Coffee
                     </Link>
                     <Link 
                       to="/products/tea" 
-                      className="text-xl font-medium text-coffee-light hover:text-white transition"
+                      className="text-lg font-medium text-primary hover:text-white transition"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       Tea
                     </Link>
                     <Link 
                       to="/products/cocoa" 
-                      className="text-xl font-medium text-coffee-light hover:text-white transition"
+                      className="text-lg font-medium text-primary hover:text-white transition"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       Cocoa
@@ -184,7 +193,7 @@ const Navbar = () => {
               
               <Link 
                 to="/producers" 
-                className="text-2xl font-medium text-white hover:text-coffee-light transition"
+                className="text-xl font-medium text-white hover:text-primary transition"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Producers
@@ -192,7 +201,7 @@ const Navbar = () => {
               
               <Link 
                 to="/services" 
-                className="text-2xl font-medium text-white hover:text-coffee-light transition"
+                className="text-xl font-medium text-white hover:text-primary transition"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Services
@@ -200,7 +209,7 @@ const Navbar = () => {
               
               <Link 
                 to="/about" 
-                className="text-2xl font-medium text-white hover:text-coffee-light transition"
+                className="text-xl font-medium text-white hover:text-primary transition"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 About
@@ -208,7 +217,7 @@ const Navbar = () => {
               
               <Link 
                 to="/blog" 
-                className="text-2xl font-medium text-white hover:text-coffee-light transition"
+                className="text-xl font-medium text-white hover:text-primary transition"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Blog
@@ -219,7 +228,11 @@ const Navbar = () => {
                 className="mt-4"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                <Button variant="outline" className="text-lg border-2 border-white text-white bg-transparent hover:bg-white hover:text-black transition-colors">
+                <Button 
+                  variant="outline" 
+                  size="lg"
+                  className="text-lg border-2 border-white text-white bg-transparent hover:bg-white hover:text-black transition-colors"
+                >
                   Contact Us
                 </Button>
               </Link>
