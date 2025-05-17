@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
@@ -40,15 +39,12 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center space-x-2 z-50">
+          <Link to="/" className="flex items-center z-50">
             <img 
               src="/lovable-uploads/af02a5f0-874d-47bc-8efa-6d232827a50c.png" 
               alt="BugsyTrade Logo" 
               className="h-10 w-auto" 
             />
-            <span className={`text-2xl font-serif font-bold ${isScrolled ? 'text-coffee-dark' : 'text-white'}`}>
-              BugsyTrade
-            </span>
           </Link>
           
           <nav className="hidden lg:flex items-center space-x-8">
