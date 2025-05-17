@@ -1,3 +1,4 @@
+
 import Layout from '@/components/layout/Layout';
 import SectionHeading from '@/components/ui/section-heading';
 import { Card, CardContent } from '@/components/ui/card';
@@ -11,7 +12,7 @@ const AboutUs = () => {
     {
       year: "2010",
       title: "Founded in Kampala",
-      description: "BugsyTrade was established with a vision to showcase Uganda's agricultural excellence globally."
+      description: "Bugsy International Trade was established with a vision to showcase Uganda's agricultural excellence globally."
     },
     {
       year: "2013",
@@ -67,7 +68,7 @@ const AboutUs = () => {
     {
       name: "Iwo Bulski",
       role: "Founder & CEO",
-      bio: "With over 15 years in agricultural exports, Iwo founded BugsyTrade to showcase Uganda's premium products globally."
+      bio: "With over 15 years in agricultural exports, Iwo founded Bugsy International Trade to showcase Uganda's premium products globally."
     },
     {
       name: "David Ochen",
@@ -122,7 +123,7 @@ const AboutUs = () => {
                 
                 <div className="space-y-6 text-gray-700 text-lg">
                   <p>
-                    At BugsyTrade, we're dedicated to showcasing the exceptional quality of Uganda's agricultural products to the world. We believe in creating sustainable value chains that benefit everyone from producer to consumer.
+                    At Bugsy International Trade, we're dedicated to showcasing the exceptional quality of Uganda's agricultural products to the world. We believe in creating sustainable value chains that benefit everyone from producer to consumer.
                   </p>
                   <p>
                     Our mission goes beyond trade – we're committed to advancing the livelihoods of farming communities while delivering premium products that meet the highest international standards.
@@ -163,7 +164,7 @@ const AboutUs = () => {
           <RevealOnScroll>
             <SectionHeading
               title="Our Values"
-              subtitle="The principles that guide everything we do at BugsyTrade"
+              subtitle="The principles that guide everything we do at Bugsy International Trade"
               centered
             />
             
@@ -192,7 +193,7 @@ const AboutUs = () => {
           <RevealOnScroll>
             <SectionHeading
               title="Our Journey"
-              subtitle="Key milestones in BugsyTrade's growth and development"
+              subtitle="Key milestones in Bugsy International Trade's growth and development"
               centered
             />
             
@@ -231,7 +232,7 @@ const AboutUs = () => {
           <RevealOnScroll>
             <SectionHeading
               title="Our Leadership Team"
-              subtitle="Meet the dedicated professionals behind BugsyTrade"
+              subtitle="Meet the dedicated professionals behind Bugsy International Trade"
               centered
             />
             

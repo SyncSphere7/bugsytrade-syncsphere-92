@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import Layout from '@/components/layout/Layout';
 import SectionHeading from '@/components/ui/section-heading';
@@ -87,7 +88,7 @@ const Blog = () => {
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-serif mb-6">
-              BugsyTrade Blog
+              Bugsy International Trade Blog
             </h1>
             <p className="text-xl text-gray-700">
               Insights, stories, and updates from Uganda's agricultural export sector.
