@@ -40,7 +40,7 @@ const CallToAction = () => {
                 </Button>
               </Link>
               <Link to="/products">
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-coffee-dark">
+                <Button size="lg" variant="secondary" className="text-white bg-coffee-dark/70 border-white hover:bg-white hover:text-coffee-dark">
                   Explore Products
                 </Button>
               </Link>
