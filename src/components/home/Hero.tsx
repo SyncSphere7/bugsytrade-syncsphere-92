@@ -41,11 +41,6 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
             className="flex items-center mb-4 gap-3"
           >
-            <img 
-              src="/lovable-uploads/af02a5f0-874d-47bc-8efa-6d232827a50c.png" 
-              alt="Bugsy International Trade Ltd" 
-              className="h-12 w-auto"
-            />
             <p className="text-white font-medium text-lg md:text-xl">Bugsy International Trade Ltd</p>
             <img 
               src="https://flagcdn.com/w40/ug.png" 
