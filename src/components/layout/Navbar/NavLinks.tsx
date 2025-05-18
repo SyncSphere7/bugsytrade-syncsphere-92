@@ -46,7 +46,7 @@ const NavLinks: React.FC<NavLinksProps> = ({ isScrolled, isRouteWithVisibleNavba
             <Link to="/products/vanilla" className="w-full">Vanilla</Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <Link to="/products/corn-flour" className="w-full">Corn Flour</Link>
+            <Link to="/products/corn-flour" className="w-full">Corn Flour (Maize)</Link>
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>

@@ -83,7 +83,7 @@ const Navbar = () => {
                   <Link to="/products/vanilla" className="w-full">Vanilla</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
-                  <Link to="/products/corn-flour" className="w-full">Corn Flour</Link>
+                  <Link to="/products/corn-flour" className="w-full">Corn Flour (Maize)</Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
@@ -185,7 +185,7 @@ const Navbar = () => {
               className="text-lg font-medium text-primary hover:text-white transition"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Corn Flour
+              Corn Flour (Maize)
             </Link>
           </div>
           
