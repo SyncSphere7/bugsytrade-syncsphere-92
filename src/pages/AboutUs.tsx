@@ -1,4 +1,3 @@
-
 import Layout from '@/components/layout/Layout';
 import SectionHeading from '@/components/ui/section-heading';
 import { Card, CardContent } from '@/components/ui/card';
@@ -255,19 +254,19 @@ const AboutUs = () => {
           <RevealOnScroll>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="bg-cream p-6 rounded-lg shadow-sm text-center">
-                <div className="text-coffee text-4xl font-bold font-serif mb-2">10+</div>
+                <div className="text-coffee text-4xl font-bold font-serif mb-2">3+</div>
                 <div className="text-gray-700">Years of Experience</div>
               </div>
               <div className="bg-cream p-6 rounded-lg shadow-sm text-center">
-                <div className="text-coffee text-4xl font-bold font-serif mb-2">250+</div>
+                <div className="text-coffee text-4xl font-bold font-serif mb-2">12+</div>
                 <div className="text-gray-700">Producer Partners</div>
               </div>
               <div className="bg-cream p-6 rounded-lg shadow-sm text-center">
-                <div className="text-coffee text-4xl font-bold font-serif mb-2">15+</div>
-                <div className="text-gray-700">European Countries</div>
+                <div className="text-coffee text-4xl font-bold font-serif mb-2">6+</div>
+                <div className="text-gray-700">Partner Countries</div>
               </div>
               <div className="bg-cream p-6 rounded-lg shadow-sm text-center">
-                <div className="text-coffee text-4xl font-bold font-serif mb-2">98%</div>
+                <div className="text-coffee text-4xl font-bold font-serif mb-2">100%</div>
                 <div className="text-gray-700">Client Satisfaction</div>
               </div>
             </div>
