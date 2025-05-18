@@ -129,11 +129,11 @@ const Producers = () => {
         </div>
       </div>
 
-      {/* Introduction */}
+      {/* Introduction with new coffee farming images */}
       <section className="py-24 bg-white">
         <div className="container mx-auto px-6">
           <RevealOnScroll>
-            <div className="max-w-3xl mx-auto text-center">
+            <div className="max-w-3xl mx-auto text-center mb-16">
               <h2 className="text-3xl font-bold font-serif mb-6">Building Sustainable Partnerships</h2>
               <p className="text-lg text-gray-700 mb-6">
                 At Bugsy Trade, we believe that exceptional agricultural products begin with the producers. We're proud to partner with cooperatives, associations, and individual farmers who share our commitment to quality, sustainability, and ethical practices.
@@ -143,6 +143,37 @@ const Producers = () => {
               </p>
             </div>
           </RevealOnScroll>
+          
+          {/* Coffee Harvesting Images */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            <RevealOnScroll>
+              <div className="rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src="/lovable-uploads/c95807c4-1ec4-4d5d-b6da-994f3b055709.png" 
+                  alt="Coffee farmers harvesting coffee cherries in Uganda" 
+                  className="w-full h-80 object-cover"
+                />
+                <div className="p-4 bg-cream">
+                  <h3 className="font-serif font-bold mb-2">Coffee Harvesting</h3>
+                  <p className="text-sm text-gray-700">Our coffee farmers carefully select only the ripest cherries for premium quality.</p>
+                </div>
+              </div>
+            </RevealOnScroll>
+            
+            <RevealOnScroll delay={0.2}>
+              <div className="rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src="/lovable-uploads/01d03c7a-f0d3-4906-a849-c0d0055ee0ca.png" 
+                  alt="Freshly harvested coffee cherries" 
+                  className="w-full h-80 object-cover"
+                />
+                <div className="p-4 bg-cream">
+                  <h3 className="font-serif font-bold mb-2">Premium Coffee Cherries</h3>
+                  <p className="text-sm text-gray-700">The vibrant red coffee cherries contain the beans that will become your favorite coffee.</p>
+                </div>
+              </div>
+            </RevealOnScroll>
+          </div>
         </div>
       </section>
 
