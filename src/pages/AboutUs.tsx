@@ -1,3 +1,4 @@
+
 import Layout from '@/components/layout/Layout';
 import SectionHeading from '@/components/ui/section-heading';
 import { Card, CardContent } from '@/components/ui/card';
@@ -7,34 +8,6 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Users, Award, Handshake, Globe, Briefcase } from 'lucide-react';
 
 const AboutUs = () => {
-  const milestones = [
-    {
-      year: "2021",
-      title: "Founded in Kampala",
-      description: "Bugsy International Trade was established with a vision to showcase Uganda's agricultural excellence globally."
-    },
-    {
-      year: "2022",
-      title: "First European Partnership",
-      description: "Secured our first major distribution agreement with a European specialty coffee importer."
-    },
-    {
-      year: "2023",
-      title: "Quality Certification",
-      description: "Achieved international quality certifications for our export operations and supply chain."
-    },
-    {
-      year: "2023",
-      title: "Producer Network Expansion",
-      description: "Expanded our network to include 12+ small-scale farmers across Uganda's prime growing regions."
-    },
-    {
-      year: "2024",
-      title: "Sustainability Initiative",
-      description: "Launched comprehensive sustainability program focusing on environmental and social responsibility."
-    },
-  ];
-
   const values = [
     {
       icon: <Award className="h-12 w-12 text-coffee" />,
@@ -63,52 +36,8 @@ const AboutUs = () => {
     }
   ];
 
-  const team = [
-    {
-      name: "Iwo Bulski",
-      role: "Founder & CEO",
-      bio: "With over 15 years in agricultural exports, Iwo founded Bugsy International Trade to showcase Uganda's premium products globally."
-    },
-    {
-      name: "David Ochen",
-      role: "Head of Producer Relations",
-      bio: "David works directly with our network of farmers, ensuring sustainable practices and premium quality."
-    },
-    {
-      name: "Maria Adeke",
-      role: "Quality Assurance Director",
-      bio: "Maria oversees our rigorous quality control processes to meet international standards."
-    },
-    {
-      name: "Robert Kyambadde",
-      role: "Export Logistics Manager",
-      bio: "Robert ensures seamless delivery of our products from Uganda to European destinations."
-    }
-  ];
-
   return (
     <Layout>
-      {/* Hero Section */}
-      <div className="relative bg-cream py-32">
-        <div className="absolute inset-0 overflow-hidden opacity-25">
-          <img 
-            src="/lovable-uploads/6a15ce1e-014d-4c9a-95e5-3fcfd19e6fce.png" 
-            alt="Coffee plantation" 
-            className="w-full h-full object-cover"
-          />
-        </div>
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-serif mb-6">
-              Our Story
-            </h1>
-            <p className="text-xl text-gray-700">
-              Connecting Uganda's agricultural excellence with European markets since 2021.
-            </p>
-          </div>
-        </div>
-      </div>
-
       {/* Mission Statement */}
       <section className="py-24 bg-white">
         <div className="container mx-auto px-6">
@@ -180,68 +109,6 @@ const AboutUs = () => {
                     </div>
                   </CardContent>
                 </Card>
-              ))}
-            </div>
-          </RevealOnScroll>
-        </div>
-      </section>
-
-      {/* Our Journey */}
-      <section className="py-24 bg-white">
-        <div className="container mx-auto px-6">
-          <RevealOnScroll>
-            <SectionHeading
-              title="Our Journey"
-              subtitle="Key milestones in Bugsy International Trade's growth and development"
-              centered
-            />
-            
-            <div className="relative mt-20">
-              {/* Timeline line */}
-              <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-coffee/20"></div>
-              
-              {/* Timeline items */}
-              <div className="space-y-24">
-                {milestones.map((milestone, index) => (
-                  <div key={index} className={`relative flex flex-col md:flex-row gap-8 ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}>
-                    {/* Timeline dot */}
-                    <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-coffee border-4 border-cream"></div>
-                    
-                    {/* Content */}
-                    <div className="flex-1"></div>
-                    <div className="flex-1 relative">
-                      <div className="md:hidden absolute left-0 top-0 -translate-x-3 w-6 h-6 rounded-full bg-coffee border-4 border-white"></div>
-                      <div className="pl-8 md:pl-0">
-                        <div className="text-3xl font-bold text-coffee mb-2">{milestone.year}</div>
-                        <h3 className="text-xl font-bold mb-2">{milestone.title}</h3>
-                        <p className="text-gray-700">{milestone.description}</p>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </RevealOnScroll>
-        </div>
-      </section>
-
-      {/* Our Team */}
-      <section className="py-24 bg-cream">
-        <div className="container mx-auto px-6">
-          <RevealOnScroll>
-            <SectionHeading
-              title="Our Leadership Team"
-              subtitle="Meet the dedicated professionals behind Bugsy International Trade"
-              centered
-            />
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
-              {team.map((member, index) => (
-                <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden p-6">
-                  <h3 className="text-xl font-bold font-serif mb-1">{member.name}</h3>
-                  <p className="text-coffee mb-4">{member.role}</p>
-                  <p className="text-gray-600 text-sm">{member.bio}</p>
-                </div>
               ))}
             </div>
           </RevealOnScroll>
