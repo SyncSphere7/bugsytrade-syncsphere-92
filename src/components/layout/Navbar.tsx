@@ -80,7 +80,10 @@ const Navbar = () => {
                   <Link to="/products/tea" className="w-full">Tea</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
-                  <Link to="/products/cocoa" className="w-full">Cocoa</Link>
+                  <Link to="/products/vanilla" className="w-full">Vanilla</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem>
+                  <Link to="/products/corn-flour" className="w-full">Corn Flour</Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
@@ -171,11 +174,18 @@ const Navbar = () => {
               Tea
             </Link>
             <Link 
-              to="/products/cocoa" 
+              to="/products/vanilla" 
               className="text-lg font-medium text-primary hover:text-white transition"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Cocoa
+              Vanilla
+            </Link>
+            <Link 
+              to="/products/corn-flour" 
+              className="text-lg font-medium text-primary hover:text-white transition"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Corn Flour
             </Link>
           </div>
           
