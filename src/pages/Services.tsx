@@ -5,7 +5,7 @@ import RevealOnScroll from '@/components/ui/reveal-on-scroll';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Globe, TrendingUp, Users, Shield, Truck, FileCheck } from 'lucide-react';
+import { ArrowRight, Globe, TrendingUp, Users, Shield, Truck, FileCheck, Handshake } from 'lucide-react';
 
 const Services = () => {
   const services = [
@@ -79,7 +79,7 @@ const Services = () => {
 
   return (
     <Layout>
-      {/* Hero Section - Updated with joined hands image */}
+      {/* Hero Section - Updated with handshake image */}
       <div className="relative bg-cream py-32">
         <div className="absolute inset-0 overflow-hidden opacity-25">
           <img 
@@ -105,6 +105,7 @@ const Services = () => {
         <div className="container mx-auto px-6">
           <RevealOnScroll>
             <div className="max-w-3xl mx-auto text-center">
+              <Handshake className="h-16 w-16 mx-auto mb-6 text-coffee" />
               <h2 className="text-3xl font-bold font-serif mb-6">Bridging Gaps in Global Trade</h2>
               <p className="text-lg text-gray-700 mb-6">
                 At BugsyTrade, we provide end-to-end solutions that simplify the complex process of international trade. Our services are designed to overcome the challenges that often prevent direct connections between Ugandan producers and European markets.
