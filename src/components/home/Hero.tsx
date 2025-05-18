@@ -49,6 +49,15 @@ const Hero = () => {
             />
           </motion.div>
           
+          {/* Store the white version of the logo as a hidden image for reference */}
+          <img 
+            src="/lovable-uploads/af02a5f0-874d-47bc-8efa-6d232827a50c.png" 
+            alt="" 
+            className="hidden" 
+            id="logo-white-template" 
+            style={{ filter: "brightness(0) invert(1)" }}
+          />
+          
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
