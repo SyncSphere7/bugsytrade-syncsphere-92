@@ -9,27 +9,27 @@ import { ArrowRight, Users, Award, Handshake, Globe, Briefcase } from 'lucide-re
 const AboutUs = () => {
   const milestones = [
     {
-      year: "2010",
+      year: "2021",
       title: "Founded in Kampala",
       description: "Bugsy International Trade was established with a vision to showcase Uganda's agricultural excellence globally."
     },
     {
-      year: "2013",
+      year: "2022",
       title: "First European Partnership",
       description: "Secured our first major distribution agreement with a European specialty coffee importer."
     },
     {
-      year: "2016",
+      year: "2023",
       title: "Quality Certification",
       description: "Achieved international quality certifications for our export operations and supply chain."
     },
     {
-      year: "2019",
+      year: "2023",
       title: "Producer Network Expansion",
-      description: "Expanded our network to include 200+ small-scale farmers across Uganda's prime growing regions."
+      description: "Expanded our network to include 12+ small-scale farmers across Uganda's prime growing regions."
     },
     {
-      year: "2022",
+      year: "2024",
       title: "Sustainability Initiative",
       description: "Launched comprehensive sustainability program focusing on environmental and social responsibility."
     },
@@ -103,7 +103,7 @@ const AboutUs = () => {
               Our Story
             </h1>
             <p className="text-xl text-gray-700">
-              Connecting Uganda's agricultural excellence with European markets since 2010.
+              Connecting Uganda's agricultural excellence with European markets since 2021.
             </p>
           </div>
         </div>
