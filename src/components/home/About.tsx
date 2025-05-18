@@ -28,19 +28,19 @@ const About = () => {
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
                 <div className="bg-white p-6 rounded-lg shadow-sm">
-                  <div className="text-coffee text-3xl font-bold font-serif mb-2">1+</div>
-                  <div className="text-gray-700">Year of Experience</div>
+                  <div className="text-coffee text-3xl font-bold font-serif mb-2">10+</div>
+                  <div className="text-gray-700">Years of Experience</div>
                 </div>
                 <div className="bg-white p-6 rounded-lg shadow-sm">
-                  <div className="text-coffee text-3xl font-bold font-serif mb-2">12+</div>
+                  <div className="text-coffee text-3xl font-bold font-serif mb-2">250+</div>
                   <div className="text-gray-700">Producer Partners</div>
                 </div>
                 <div className="bg-white p-6 rounded-lg shadow-sm">
-                  <div className="text-coffee text-3xl font-bold font-serif mb-2">6+</div>
-                  <div className="text-gray-700">Partner Countries</div>
+                  <div className="text-coffee text-3xl font-bold font-serif mb-2">15+</div>
+                  <div className="text-gray-700">European Countries</div>
                 </div>
                 <div className="bg-white p-6 rounded-lg shadow-sm">
-                  <div className="text-coffee text-3xl font-bold font-serif mb-2">100%</div>
+                  <div className="text-coffee text-3xl font-bold font-serif mb-2">98%</div>
                   <div className="text-gray-700">Client Satisfaction</div>
                 </div>
               </div>
