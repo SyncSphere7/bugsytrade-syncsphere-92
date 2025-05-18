@@ -1,12 +1,25 @@
-
 import Layout from '@/components/layout/Layout';
 import SectionHeading from '@/components/ui/section-heading';
 import RevealOnScroll from '@/components/ui/reveal-on-scroll';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
+import { useEffect, useState } from 'react';
 
 const Producers = () => {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const parallaxValue = scrollY * 0.2;
+
   const producerGroups = [
     {
       title: "Coffee Producers",
@@ -108,28 +121,55 @@ const Producers = () => {
 
   return (
     <Layout>
-      {/* Hero Section */}
+      {/* Hero Section with Ugandan Flag Background */}
       <div className="relative bg-cream py-32">
-        <div className="absolute inset-0 overflow-hidden opacity-25">
-          <img 
-            src="/lovable-uploads/77bed13d-6c7e-4c8f-aee5-b4ee0239ed76.png" 
-            alt="Ugandan farmer" 
-            className="w-full h-full object-cover"
+        <div className="absolute inset-0 overflow-hidden">
+          {/* Ugandan Flag Background */}
+          <div 
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{ 
+              backgroundImage: `url('https://flagcdn.com/w2560/ug.png')`,
+              transform: `translateY(${parallaxValue}px)`,
+              backgroundPositionY: `${-parallaxValue * 0.5}px`,
+              backgroundSize: 'cover',
+              opacity: 0.15,
+            }}
           />
+          
+          {/* Black gradient overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-black/30" />
+          
+          {/* Yellow lines pattern */}
+          <div className="absolute inset-0 z-0 opacity-20">
+            <div className="w-full h-full">
+              {[...Array(10)].map((_, i) => (
+                <div 
+                  key={i}
+                  className="absolute bg-yellow-400" 
+                  style={{
+                    height: '2px',
+                    width: '100%',
+                    top: `${i * 10 + 5}%`,
+                    transform: `rotate(${i % 2 ? -2 : 2}deg) translateY(${parallaxValue * (i % 3 + 1) * 0.1}px)`,
+                  }}
+                />
+              ))}
+            </div>
+          </div>
         </div>
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-serif mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-serif mb-6 text-white">
               Our Producer Partners
             </h1>
-            <p className="text-xl text-gray-700">
+            <p className="text-xl text-gray-100">
               Meet the dedicated farmers and cooperatives behind Uganda's exceptional agricultural products.
             </p>
           </div>
         </div>
       </div>
 
-      {/* Introduction with new coffee farming images */}
+      {/* Introduction with coffee farming images */}
       <section className="py-24 bg-white">
         <div className="container mx-auto px-6">
           <RevealOnScroll>

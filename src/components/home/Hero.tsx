@@ -21,37 +21,16 @@ const Hero = () => {
 
   return (
     <section className="relative h-screen min-h-[700px] flex items-center">
-      {/* Background with Ugandan Flag */}
+      {/* Background Parallax Image - Brighter version */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat brightness-110"
         style={{ 
-          backgroundImage: `url('https://flagcdn.com/w2560/ug.png')`,
+          backgroundImage: `url('/lovable-uploads/832530d3-5298-42e6-ba50-d9e7b79a44e4.png')`,
           transform: `translateY(${parallaxValue}px)`,
           backgroundPositionY: `${-parallaxValue * 0.5}px`,
-          backgroundSize: 'cover',
-          opacity: 0.15,
         }}
-      />
-      
-      {/* Overlay gradient */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40" />
-      
-      {/* Yellow lines pattern */}
-      <div className="absolute inset-0 z-0 opacity-20">
-        <div className="w-full h-full">
-          {[...Array(10)].map((_, i) => (
-            <div 
-              key={i}
-              className="absolute bg-yellow-400" 
-              style={{
-                height: '2px',
-                width: '100%',
-                top: `${i * 10 + 5}%`,
-                transform: `rotate(${i % 2 ? -2 : 2}deg) translateY(${parallaxValue * (i % 3 + 1) * 0.1}px)`,
-              }}
-            />
-          ))}
-        </div>
+      >
+        <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30" />
       </div>
       
       <div className="relative container mx-auto px-6 z-10">
