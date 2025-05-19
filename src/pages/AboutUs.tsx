@@ -66,11 +66,13 @@ const AboutUs = () => {
             <div className="relative">
               <RevealOnScroll direction="left">
                 <div className="relative flex justify-center items-center">
-                  <img 
-                    src="/lovable-uploads/61a1a7d4-2e59-4228-a321-aa41fc67959e.png" 
-                    alt="Bugsy International Trade Logo" 
-                    className="w-full max-w-md rounded-lg shadow-xl"
-                  />
+                  <div className="bg-[#FDE1D3] p-8 rounded-lg shadow-xl">
+                    <img 
+                      src="/lovable-uploads/61a1a7d4-2e59-4228-a321-aa41fc67959e.png" 
+                      alt="Bugsy International Trade Logo" 
+                      className="w-full max-w-md"
+                    />
+                  </div>
                   <div className="absolute -top-10 -right-10 bg-coffee/10 h-full w-full rounded-lg -z-10"></div>
                 </div>
               </RevealOnScroll>

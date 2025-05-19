@@ -1,3 +1,4 @@
+
 import Layout from '@/components/layout/Layout';
 import SectionHeading from '@/components/ui/section-heading';
 import RevealOnScroll from '@/components/ui/reveal-on-scroll';
@@ -121,31 +122,31 @@ const Producers = () => {
 
   return (
     <Layout>
-      {/* Hero Section with Ugandan Flag Background */}
+      {/* Hero Section with Coffee Field Background */}
       <div className="relative bg-cream py-32">
         <div className="absolute inset-0 overflow-hidden">
-          {/* Ugandan Flag Background */}
+          {/* Coffee Field Background */}
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{ 
-              backgroundImage: `url('https://flagcdn.com/w2560/ug.png')`,
+              backgroundImage: `url('/lovable-uploads/c95807c4-1ec4-4d5d-b6da-994f3b055709.png')`,
               transform: `translateY(${parallaxValue}px)`,
               backgroundPositionY: `${-parallaxValue * 0.5}px`,
               backgroundSize: 'cover',
-              opacity: 0.15,
+              opacity: 0.6,
             }}
           />
           
-          {/* Black gradient overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-black/30" />
+          {/* Dark gradient overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-coffee-dark/80 to-coffee-dark/60" />
           
-          {/* Yellow lines pattern */}
-          <div className="absolute inset-0 z-0 opacity-20">
+          {/* Pattern overlay */}
+          <div className="absolute inset-0 z-0 opacity-10">
             <div className="w-full h-full">
               {[...Array(10)].map((_, i) => (
                 <div 
                   key={i}
-                  className="absolute bg-yellow-400" 
+                  className="absolute bg-cream" 
                   style={{
                     height: '2px',
                     width: '100%',

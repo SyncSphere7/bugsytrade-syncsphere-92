@@ -17,14 +17,14 @@ const ContactPage = () => {
     },
     {
       icon: <Phone className="h-6 w-6 text-coffee" />,
-      title: "Phone",
+      title: "WhatsApp",
       content: "+256 786 700 022",
-      link: "tel:+256786700022",
+      link: "https://wa.me/256786700022",
     },
     {
       icon: <MapPin className="h-6 w-6 text-coffee" />,
       title: "Address",
-      content: "Kampala, Uganda",
+      content: "P.O.Box 183371, Kampala, Uganda",
       link: "https://maps.google.com/?q=Kampala,Uganda",
     },
     {
