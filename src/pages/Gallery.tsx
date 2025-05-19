@@ -1,3 +1,4 @@
+
 import Layout from '@/components/layout/Layout';
 import SectionHeading from '@/components/ui/section-heading';
 import RevealOnScroll from '@/components/ui/reveal-on-scroll';
@@ -12,8 +13,8 @@ const Gallery = () => {
       category: "Coffee Production"
     },
     {
-      src: "/lovable-uploads/ad8a4b0d-7deb-4d23-82d9-3a1b9ee272d7.png",
-      alt: "Coffee beans",
+      src: "/lovable-uploads/484aeee5-8dc0-4f7e-a6eb-765ac4bb27d9.png", // Changed from vanilla seeds to real vanilla image
+      alt: "Vanilla",
       category: "Products"
     },
     {
@@ -37,8 +38,8 @@ const Gallery = () => {
       category: "Products"
     },
     {
-      src: "/lovable-uploads/832530d3-5298-42e6-ba50-d9e7b79a44e4.png",
-      alt: "Coffee farmer",
+      src: "/lovable-uploads/f5837b6e-3813-4c38-874e-3885dfdff5b8.png", // Changed to real coffee farmers image
+      alt: "Coffee farmers",
       category: "Producers"
     },
     {
