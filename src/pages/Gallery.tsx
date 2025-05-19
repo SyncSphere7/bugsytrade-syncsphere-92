@@ -47,7 +47,7 @@ const Gallery = () => {
       category: "Products"
     },
     {
-      src: "/lovable-uploads/f5837b6e-3813-4c38-874e-3885dfdff5b8.png",
+      src: "/lovable-uploads/59c2d627-cefe-49b3-ab03-6f10e62e8259.png",
       alt: "Coffee farmers",
       category: "Producers"
     },
