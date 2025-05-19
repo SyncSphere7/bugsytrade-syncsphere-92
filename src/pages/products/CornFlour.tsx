@@ -11,21 +11,21 @@ const CornFlour = () => {
     {
       name: "Standard Corn Flour",
       description: "Our standard corn flour is finely milled from high-quality Ugandan maize, perfect for everyday cooking and baking applications.",
-      image: "/lovable-uploads/bef93f67-eee4-4f21-81bc-284a92e37ae0.png",
+      image: "/lovable-uploads/7d7eedb7-e9a8-4abc-ba9f-7906ab64bd91.png",
       grade: "Standard Grade",
       process: "Stone Ground"
     },
     {
       name: "Premium Corn Flour",
       description: "Our premium corn flour offers exceptional texture and flavor, ideal for commercial baking and food production applications.",
-      image: "/lovable-uploads/916843c1-db65-4171-ac4b-5e94a84fcbca.png",
+      image: "/lovable-uploads/e2f5c9b2-91c3-41bb-8cab-0773e3c8bdb6.png",
       grade: "Premium Grade",
       process: "Roller Milled"
     },
     {
       name: "Organic Corn Flour",
       description: "Certified organic corn flour sourced from farms that use no chemical pesticides or fertilizers, offering clean flavor and sustainable growing practices.",
-      image: "/lovable-uploads/bef93f67-eee4-4f21-81bc-284a92e37ae0.png",
+      image: "/lovable-uploads/7d7eedb7-e9a8-4abc-ba9f-7906ab64bd91.png",
       grade: "Organic Certified",
       process: "Traditional Milling"
     }
@@ -36,7 +36,7 @@ const CornFlour = () => {
       <div className="relative bg-yellow-700 text-white py-32">
         <div className="absolute inset-0 overflow-hidden">
           <img 
-            src="/lovable-uploads/bef93f67-eee4-4f21-81bc-284a92e37ae0.png" 
+            src="/lovable-uploads/7d7eedb7-e9a8-4abc-ba9f-7906ab64bd91.png" 
             alt="Corn flour" 
             className="w-full h-full object-cover opacity-40"
           />
@@ -75,8 +75,8 @@ const CornFlour = () => {
             
             <div className="flex items-center justify-center">
               <img 
-                src="/lovable-uploads/bef93f67-eee4-4f21-81bc-284a92e37ae0.png" 
-                alt="Corn fields in Uganda" 
+                src="/lovable-uploads/e2f5c9b2-91c3-41bb-8cab-0773e3c8bdb6.png" 
+                alt="Corn flour in Uganda" 
                 className="rounded-lg shadow-xl max-h-96 object-cover"
               />
             </div>
@@ -136,7 +136,7 @@ const CornFlour = () => {
           <div className="grid md:grid-cols-2 gap-10 mt-10">
             <div className="flex items-center justify-center">
               <img 
-                src="/lovable-uploads/bef93f67-eee4-4f21-81bc-284a92e37ae0.png" 
+                src="/lovable-uploads/7d7eedb7-e9a8-4abc-ba9f-7906ab64bd91.png" 
                 alt="Corn flour processing" 
                 className="rounded-lg shadow-xl max-h-96 object-cover"
               />

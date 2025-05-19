@@ -70,7 +70,7 @@ const Products = () => {
     {
       title: "Corn Flour (Maize)",
       description: "High-quality maize flour from Uganda's fertile lands, offering superior texture and taste for a variety of food applications.",
-      image: "/lovable-uploads/bef93f67-eee4-4f21-81bc-284a92e37ae0.png",
+      image: "/lovable-uploads/7d7eedb7-e9a8-4abc-ba9f-7906ab64bd91.png",
       link: "/products/corn-flour",
       delay: 6
     }
