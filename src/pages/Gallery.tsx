@@ -2,7 +2,7 @@
 import Layout from '@/components/layout/Layout';
 import SectionHeading from '@/components/ui/section-heading';
 import RevealOnScroll from '@/components/ui/reveal-on-scroll';
-import { Images } from 'lucide-react';
+import { GalleryHorizontal } from 'lucide-react';
 
 const Gallery = () => {
   const galleryImages = [
@@ -145,7 +145,7 @@ const Gallery = () => {
           <div className="flex justify-center mb-8">
             <div className="inline-flex items-center p-1 bg-gray-100 rounded-lg">
               <div className="flex items-center gap-2 py-2 px-4 rounded-md bg-coffee text-white">
-                <Images className="h-5 w-5" />
+                <GalleryHorizontal className="h-5 w-5" />
                 <span className="font-medium">All Images</span>
               </div>
             </div>
@@ -155,12 +155,13 @@ const Gallery = () => {
             {galleryImages.map((image, index) => (
               <RevealOnScroll key={index} delay={index * 0.1}>
                 <div className="overflow-hidden rounded-lg shadow-lg group relative h-64">
+                  <div className="absolute inset-0 bg-white/30 z-10"></div>
                   <img 
                     src={image.src}
                     alt={image.alt}
-                    className="w-full h-full object-cover transition-transform group-hover:scale-110 duration-700"
+                    className="w-full h-full object-cover transition-transform group-hover:scale-110 duration-700 brightness-110 contrast-95"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-4">
+                  <div className="absolute inset-0 z-20 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-4">
                     <span className="text-white text-sm font-medium px-2 py-1 bg-coffee/80 rounded-md self-start">
                       {image.category}
                     </span>

@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { Instagram, Facebook, Linkedin, Mail, Phone, MapPin, Twitter } from 'lucide-react';
 
@@ -71,6 +70,11 @@ const Footer = () => {
               <li>
                 <Link to="/import-process" className="text-coffee-light hover:text-white hover-underline transition-colors">
                   Import Process
+                </Link>
+              </li>
+              <li>
+                <Link to="/gallery" className="text-coffee-light hover:text-white hover-underline transition-colors">
+                  Gallery
                 </Link>
               </li>
               <li>
