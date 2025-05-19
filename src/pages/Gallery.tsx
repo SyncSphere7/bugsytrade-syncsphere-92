@@ -55,25 +55,26 @@ const Gallery = () => {
       alt: "Coffee sacks ready for export",
       category: "Logistics"
     },
-    // New image added here
     {
       src: "/lovable-uploads/04e37e5f-c894-44ca-befb-09da3c97a88e.png",
       alt: "Quality Control",
       category: "Coffee Producer Laboratory"
     },
-    // Adding the new image
     {
       src: "/lovable-uploads/42b7c0b4-18df-4c24-80ee-5fdad0cec81d.png",
       alt: "Husks (Cascara)",
       category: "Shells for connoisseurs"
     },
-    // Adding the newest image
     {
       src: "/lovable-uploads/a2ce816c-80af-420e-847f-c3ad5b214416.png",
       alt: "Full container ready for our client",
       category: "Transportation"
     },
-    // Other images
+    {
+      src: "/lovable-uploads/ea99c3b2-eefc-41f0-b360-3063c63d0793.png",
+      alt: "Transporting coffee to Europe",
+      category: "Export"
+    },
     {
       src: "/lovable-uploads/9659d9b3-582e-4bbe-b747-bd8beee082fd.png",
       alt: "Team members in office",
