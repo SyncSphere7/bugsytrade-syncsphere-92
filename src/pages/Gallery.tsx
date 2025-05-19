@@ -32,9 +32,9 @@ const Gallery = () => {
       category: "Tea Plantation"
     },
     {
-      src: "/lovable-uploads/a3ffbc6d-7744-43cf-aa8a-c3175dd67780.png",
-      alt: "Coffee sorting",
-      category: "Coffee Sorting"
+      src: "/lovable-uploads/232fe62f-c76b-4b04-b61c-c2183ee807ee.png",
+      alt: "Coffee drying process",
+      category: "Coffee Processing"
     },
     {
       src: "/lovable-uploads/bef93f67-eee4-4f21-81bc-284a92e37ae0.png",
