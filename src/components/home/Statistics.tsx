@@ -2,7 +2,7 @@
 import SectionHeading from '@/components/ui/section-heading';
 import RevealOnScroll from '@/components/ui/reveal-on-scroll';
 import StatsCounter from '@/components/ui/stats-counter';
-import { Coffee, Leaf, Wheat, BarChartIncreasing } from 'lucide-react';
+import { Coffee, Leaf, Wheat, ChartBarIncreasing } from 'lucide-react';
 import { Skeleton } from '@/components/ui/skeleton';
 
 interface StatItemProps {
@@ -57,7 +57,7 @@ const Statistics = () => {
       delay: 4
     },
     {
-      icon: <BarChartIncreasing className="h-8 w-8" />,
+      icon: <ChartBarIncreasing className="h-8 w-8" />,
       value: 28,
       label: "Agricultural Export Growth",
       suffix: "%",
