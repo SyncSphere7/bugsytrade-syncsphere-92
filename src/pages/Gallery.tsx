@@ -67,6 +67,12 @@ const Gallery = () => {
       alt: "Husks (Cascara)",
       category: "Shells for connoisseurs"
     },
+    // Adding the newest image
+    {
+      src: "/lovable-uploads/a2ce816c-80af-420e-847f-c3ad5b214416.png",
+      alt: "Full container ready for our client",
+      category: "Transportation"
+    },
     // Other images
     {
       src: "/lovable-uploads/9659d9b3-582e-4bbe-b747-bd8beee082fd.png",
