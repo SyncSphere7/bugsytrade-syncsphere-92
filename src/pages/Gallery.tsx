@@ -27,7 +27,7 @@ const Gallery = () => {
       category: "Products"
     },
     {
-      src: "/lovable-uploads/916843c1-db65-4171-ac4b-5e94a84fcbca.png",
+      src: "/lovable-uploads/f561f716-3f6e-44ad-a447-6acabbb7c3c0.png",
       alt: "Tea farm",
       category: "Tea Plantation"
     },
@@ -150,7 +150,7 @@ const Gallery = () => {
       <div className="relative bg-cream py-32">
         <div className="absolute inset-0 overflow-hidden opacity-25">
           <img 
-            src="/lovable-uploads/916843c1-db65-4171-ac4b-5e94a84fcbca.png" 
+            src="/lovable-uploads/f561f716-3f6e-44ad-a447-6acabbb7c3c0.png" 
             alt="Uganda agriculture" 
             className="w-full h-full object-cover"
           />
