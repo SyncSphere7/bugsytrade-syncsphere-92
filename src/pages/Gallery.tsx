@@ -1,4 +1,3 @@
-
 import Layout from '@/components/layout/Layout';
 import SectionHeading from '@/components/ui/section-heading';
 import RevealOnScroll from '@/components/ui/reveal-on-scroll';
@@ -61,6 +60,12 @@ const Gallery = () => {
       src: "/lovable-uploads/04e37e5f-c894-44ca-befb-09da3c97a88e.png",
       alt: "Quality Control",
       category: "Coffee Producer Laboratory"
+    },
+    // Adding the new image
+    {
+      src: "/lovable-uploads/42b7c0b4-18df-4c24-80ee-5fdad0cec81d.png",
+      alt: "Husks (Cascara)",
+      category: "Shells for connoisseurs"
     },
     // Other images
     {
