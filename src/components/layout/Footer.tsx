@@ -100,7 +100,14 @@ const Footer = () => {
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-coffee-light shrink-0" />
-                <span>WhatsApp: +256 786 700 022</span>
+                <a 
+                  href="https://wa.me/256786700022" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                >
+                  WhatsApp: +256 786 700 022
+                </a>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-coffee-light shrink-0" />
