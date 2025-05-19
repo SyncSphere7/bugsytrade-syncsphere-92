@@ -11,21 +11,21 @@ const Vanilla = () => {
     {
       name: "Whole Vanilla Beans",
       description: "Our premium whole vanilla beans are carefully harvested and cured to preserve their rich, complex flavor profile and exceptional aroma.",
-      image: "/lovable-uploads/77bed13d-6c7e-4c8f-aee5-b4ee0239ed76.png",
+      image: "/lovable-uploads/81a38454-139c-4114-a250-3b9f134fbb5d.png",
       region: "Central Uganda",
       process: "Traditional sun-curing"
     },
     {
       name: "Vanilla Bean Powder",
       description: "Finely ground Ugandan vanilla beans, offering intense flavor and aroma for baking, desserts, and other culinary applications.",
-      image: "/lovable-uploads/916843c1-db65-4171-ac4b-5e94a84fcbca.png",
+      image: "/lovable-uploads/1928e6f7-88b9-483d-aeed-c2ec173e698d.png",
       region: "Western Uganda",
       process: "Ground after curing"
     },
     {
       name: "Vanilla Bean Extract",
       description: "Pure vanilla extract made from Ugandan beans, offering a rich and smooth flavor profile perfect for both home and commercial use.",
-      image: "/lovable-uploads/77bed13d-6c7e-4c8f-aee5-b4ee0239ed76.png",
+      image: "/lovable-uploads/b9d552c8-7b22-4637-8401-6a7fc844f7f7.png",
       region: "Multiple regions",
       process: "Cold extraction"
     }
@@ -36,8 +36,8 @@ const Vanilla = () => {
       <div className="relative bg-amber-800 text-white py-32">
         <div className="absolute inset-0 overflow-hidden">
           <img 
-            src="/lovable-uploads/77bed13d-6c7e-4c8f-aee5-b4ee0239ed76.png" 
-            alt="Vanilla beans" 
+            src="/lovable-uploads/484aeee5-8dc0-4f7e-a6eb-765ac4bb27d9.png" 
+            alt="Vanilla beans and flowers" 
             className="w-full h-full object-cover opacity-40"
           />
         </div>
@@ -75,8 +75,8 @@ const Vanilla = () => {
             
             <div className="flex items-center justify-center">
               <img 
-                src="/lovable-uploads/77bed13d-6c7e-4c8f-aee5-b4ee0239ed76.png" 
-                alt="Vanilla beans from Uganda" 
+                src="/lovable-uploads/484aeee5-8dc0-4f7e-a6eb-765ac4bb27d9.png" 
+                alt="Vanilla beans and flowers" 
                 className="rounded-lg shadow-xl max-h-96 object-cover"
               />
             </div>
@@ -136,8 +136,8 @@ const Vanilla = () => {
           <div className="grid md:grid-cols-2 gap-10 mt-10">
             <div className="flex items-center justify-center">
               <img 
-                src="/lovable-uploads/bef93f67-eee4-4f21-81bc-284a92e37ae0.png" 
-                alt="Vanilla quality control" 
+                src="/lovable-uploads/81a38454-139c-4114-a250-3b9f134fbb5d.png" 
+                alt="Premium vanilla beans" 
                 className="rounded-lg shadow-xl max-h-96 object-cover"
               />
             </div>
