@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import Layout from '@/components/layout/Layout';
 import SectionHeading from '@/components/ui/section-heading';
@@ -7,7 +6,6 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { Link, useNavigate } from 'react-router-dom';
 import { ArrowRight, Calendar, User, Tag } from 'lucide-react';
-import NewsletterForm from '@/components/newsletter/NewsletterForm';
 
 const Blog = () => {
   const navigate = useNavigate();
@@ -181,23 +179,6 @@ const Blog = () => {
               </Button>
             </div>
           )}
-        </div>
-      </section>
-
-      {/* Newsletter Section */}
-      <section className="py-24 bg-cream">
-        <div className="container mx-auto px-6">
-          <RevealOnScroll>
-            <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl font-bold font-serif mb-6">Subscribe to Our Newsletter</h2>
-              <p className="text-lg text-gray-700 mb-8">
-                Stay updated with the latest news, insights, and stories from Uganda's agricultural export sector.
-              </p>
-              <div className="max-w-lg mx-auto">
-                <NewsletterForm />
-              </div>
-            </div>
-          </RevealOnScroll>
         </div>
       </section>
     </Layout>
