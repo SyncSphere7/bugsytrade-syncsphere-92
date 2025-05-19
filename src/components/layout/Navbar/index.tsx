@@ -12,7 +12,7 @@ const Navbar = () => {
   const location = useLocation();
 
   // Define which routes should have an initially visible navbar
-  const routesWithVisibleNavbar = ['/producers', '/services', '/about', '/blog', '/gallery', '/movies'];
+  const routesWithVisibleNavbar = ['/producers', '/services', '/about', '/gallery', '/movies', '/import-process'];
   const isRouteWithVisibleNavbar = routesWithVisibleNavbar.includes(location.pathname);
 
   useEffect(() => {
