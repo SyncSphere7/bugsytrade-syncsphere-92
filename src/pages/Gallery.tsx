@@ -2,7 +2,7 @@
 import Layout from '@/components/layout/Layout';
 import SectionHeading from '@/components/ui/section-heading';
 import RevealOnScroll from '@/components/ui/reveal-on-scroll';
-import { Gallery as GalleryIcon, Images } from 'lucide-react';
+import { Images } from 'lucide-react';
 
 const Gallery = () => {
   const galleryImages = [
