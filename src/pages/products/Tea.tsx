@@ -11,21 +11,21 @@ const Tea = () => {
     {
       name: "Black Tea",
       description: "Our premium Ugandan black tea is known for its rich, bold flavor and bright coppery infusion. Full-bodied with a smooth, malty character.",
-      image: "/lovable-uploads/916843c1-db65-4171-ac4b-5e94a84fcbca.png",
+      image: "/lovable-uploads/0b09f6f7-0b1e-463b-88e1-6db000a0b327.png",
       region: "Western Uganda",
       process: "Orthodox and CTC"
     },
     {
       name: "Green Tea",
       description: "Delicate and refreshing, our Ugandan green tea offers a light, grassy flavor with subtle sweet notes and a clean finish.",
-      image: "/lovable-uploads/0634ee8b-a672-4298-a5d6-39ec11006714.png",
+      image: "/lovable-uploads/b144cba4-8df1-425b-8698-e1228b2914cf.png",
       region: "Mount Rwenzori",
       process: "Pan-fired"
     },
     {
       name: "White Tea",
       description: "Our rare white tea showcases the finest, most tender leaves and buds, creating a delicate infusion with subtle floral and honey notes.",
-      image: "/lovable-uploads/916843c1-db65-4171-ac4b-5e94a84fcbca.png",
+      image: "/lovable-uploads/320f3fcc-fdbc-4878-bd3f-f25e483dce1b.png",
       region: "Kyenjojo District",
       process: "Hand-processed"
     }
@@ -36,8 +36,8 @@ const Tea = () => {
       <div className="relative bg-forest-dark text-white py-32">
         <div className="absolute inset-0 overflow-hidden">
           <img 
-            src="/lovable-uploads/916843c1-db65-4171-ac4b-5e94a84fcbca.png" 
-            alt="Tea plantation" 
+            src="/lovable-uploads/b144cba4-8df1-425b-8698-e1228b2914cf.png" 
+            alt="Tea plantation landscape" 
             className="w-full h-full object-cover opacity-40"
           />
         </div>
@@ -75,8 +75,8 @@ const Tea = () => {
             
             <div className="flex items-center justify-center">
               <img 
-                src="/lovable-uploads/916843c1-db65-4171-ac4b-5e94a84fcbca.png" 
-                alt="Tea plantation in Uganda" 
+                src="/lovable-uploads/0b09f6f7-0b1e-463b-88e1-6db000a0b327.png" 
+                alt="Vast tea plantation under blue sky" 
                 className="rounded-lg shadow-xl max-h-96 object-cover"
               />
             </div>
@@ -136,8 +136,8 @@ const Tea = () => {
           <div className="grid md:grid-cols-2 gap-10 mt-10">
             <div className="flex items-center justify-center">
               <img 
-                src="/lovable-uploads/bef93f67-eee4-4f21-81bc-284a92e37ae0.png" 
-                alt="Tea quality testing" 
+                src="/lovable-uploads/320f3fcc-fdbc-4878-bd3f-f25e483dce1b.png" 
+                alt="Tea farmer with harvested leaves" 
                 className="rounded-lg shadow-xl max-h-96 object-cover"
               />
             </div>
