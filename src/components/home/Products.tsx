@@ -56,19 +56,19 @@ const Products = () => {
     {
       title: "Tea",
       description: "Uganda's ideal climate produces bold, aromatic teas that are increasingly sought after by discerning international buyers.",
-      image: "/lovable-uploads/916843c1-db65-4171-ac4b-5e94a84fcbca.png",
+      image: "/lovable-uploads/7b18691e-7868-4d2c-9d1b-2d3113d91828.png",
       link: "/products/tea",
       delay: 2
     },
     {
       title: "Vanilla",
       description: "Premium Ugandan vanilla, known for its exceptional flavor profile and aromatic qualities, perfect for culinary applications.",
-      image: "/lovable-uploads/77bed13d-6c7e-4c8f-aee5-b4ee0239ed76.png",
+      image: "/lovable-uploads/484aeee5-8dc0-4f7e-a6eb-765ac4bb27d9.png",
       link: "/products/vanilla",
       delay: 4
     },
     {
-      title: "Corn Flour",
+      title: "Corn Flour (Maize)",
       description: "High-quality maize flour from Uganda's fertile lands, offering superior texture and taste for a variety of food applications.",
       image: "/lovable-uploads/bef93f67-eee4-4f21-81bc-284a92e37ae0.png",
       link: "/products/corn-flour",
