@@ -11,21 +11,21 @@ const Tea = () => {
     {
       name: "Black Tea",
       description: "Our premium Ugandan black tea is known for its rich, bold flavor and bright coppery infusion. Full-bodied with a smooth, malty character.",
-      image: "/lovable-uploads/0b09f6f7-0b1e-463b-88e1-6db000a0b327.png",
+      image: "/lovable-uploads/c000e7b1-a06b-45db-8221-0e4097cfe66b.png",
       region: "Western Uganda",
       process: "Orthodox and CTC"
     },
     {
       name: "Green Tea",
       description: "Delicate and refreshing, our Ugandan green tea offers a light, grassy flavor with subtle sweet notes and a clean finish.",
-      image: "/lovable-uploads/b144cba4-8df1-425b-8698-e1228b2914cf.png",
+      image: "/lovable-uploads/1d98c576-13d7-4de0-b9ba-2ff7ba0e3bef.png",
       region: "Mount Rwenzori",
       process: "Pan-fired"
     },
     {
       name: "White Tea",
       description: "Our rare white tea showcases the finest, most tender leaves and buds, creating a delicate infusion with subtle floral and honey notes.",
-      image: "/lovable-uploads/320f3fcc-fdbc-4878-bd3f-f25e483dce1b.png",
+      image: "/lovable-uploads/320f3fcc-fdbc-4878-bd3f-f25e483dce1b.png", // Keeping this image as it has a woman
       region: "Kyenjojo District",
       process: "Hand-processed"
     }
@@ -36,8 +36,8 @@ const Tea = () => {
       <div className="relative bg-forest-dark text-white py-32">
         <div className="absolute inset-0 overflow-hidden">
           <img 
-            src="/lovable-uploads/b144cba4-8df1-425b-8698-e1228b2914cf.png" 
-            alt="Tea plantation landscape" 
+            src="/lovable-uploads/7b18691e-7868-4d2c-9d1b-2d3113d91828.png" 
+            alt="Lush tea plantation landscape" 
             className="w-full h-full object-cover opacity-40"
           />
         </div>
@@ -75,8 +75,8 @@ const Tea = () => {
             
             <div className="flex items-center justify-center">
               <img 
-                src="/lovable-uploads/0b09f6f7-0b1e-463b-88e1-6db000a0b327.png" 
-                alt="Vast tea plantation under blue sky" 
+                src="/lovable-uploads/b6e7050c-a1a8-4e35-9e40-de890b5e1a5b.png" 
+                alt="Rolling hills of tea plantations" 
                 className="rounded-lg shadow-xl max-h-96 object-cover"
               />
             </div>
