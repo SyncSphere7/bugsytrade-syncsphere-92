@@ -155,21 +155,21 @@ const Gallery = () => {
             {galleryImages.map((image, index) => (
               <RevealOnScroll key={index} delay={index * 0.1}>
                 <div className="overflow-hidden rounded-lg shadow-lg group relative h-64">
-                  {/* Increased white overlay opacity to make images lighter */}
-                  <div className="absolute inset-0 bg-white/40 z-10"></div>
+                  {/* Reduced white overlay opacity */}
+                  <div className="absolute inset-0 bg-white/20 z-10"></div>
                   <img 
                     src={image.src}
                     alt={image.alt}
-                    className="w-full h-full object-cover transition-transform group-hover:scale-110 duration-700 brightness-125 contrast-90"
+                    className="w-full h-full object-cover transition-transform group-hover:scale-110 duration-700 brightness-110 contrast-95"
                   />
-                  {/* Text overlay is separate with its own z-index and transparency */}
+                  {/* Text overlay is separate with its own z-index */}
                   <div className="absolute inset-0 z-20 flex flex-col justify-end p-4 pointer-events-none">
                     {/* Separate container for the category tag with its own background */}
                     <div className="flex flex-col gap-2">
                       <span className="text-white text-sm font-medium px-2 py-1 bg-coffee/80 rounded-md self-start">
                         {image.category}
                       </span>
-                      {/* Text directly on top of lightened image */}
+                      {/* Text directly on top of image */}
                       <h3 className="text-white text-shadow">{image.alt}</h3>
                     </div>
                   </div>
