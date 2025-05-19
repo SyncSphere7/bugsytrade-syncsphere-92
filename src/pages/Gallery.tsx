@@ -1,4 +1,3 @@
-
 import Layout from '@/components/layout/Layout';
 import SectionHeading from '@/components/ui/section-heading';
 import RevealOnScroll from '@/components/ui/reveal-on-scroll';
@@ -19,22 +18,22 @@ const Gallery = () => {
     {
       src: "/lovable-uploads/0634ee8b-a672-4298-a5d6-39ec11006714.png",
       alt: "Coffee farmer harvesting",
-      category: "Coffee Production"
+      category: "Coffee Harvesting"
     },
     {
-      src: "/lovable-uploads/484aeee5-8dc0-4f7e-a6eb-765ac4bb27d9.png", // Changed from vanilla seeds to real vanilla image
+      src: "/lovable-uploads/484aeee5-8dc0-4f7e-a6eb-765ac4bb27d9.png",
       alt: "Vanilla",
       category: "Products"
     },
     {
       src: "/lovable-uploads/916843c1-db65-4171-ac4b-5e94a84fcbca.png",
-      alt: "Tea plantation",
-      category: "Tea Production"
+      alt: "Tea farm",
+      category: "Tea Plantation"
     },
     {
       src: "/lovable-uploads/b2b53896-79f4-4ebd-a14a-311bb4eff9a9.png",
       alt: "Coffee processing",
-      category: "Coffee Processing"
+      category: "Coffee Production"
     },
     {
       src: "/lovable-uploads/bef93f67-eee4-4f21-81bc-284a92e37ae0.png",
@@ -47,13 +46,13 @@ const Gallery = () => {
       category: "Products"
     },
     {
-      src: "/lovable-uploads/f5837b6e-3813-4c38-874e-3885dfdff5b8.png", // Changed to real coffee farmers image
+      src: "/lovable-uploads/f5837b6e-3813-4c38-874e-3885dfdff5b8.png",
       alt: "Coffee farmers",
       category: "Producers"
     },
     {
       src: "/lovable-uploads/cf6fd754-2a15-4f7d-b7b5-cdf97a580988.png",
-      alt: "Export loading",
+      alt: "Coffee sacks ready for export",
       category: "Logistics"
     },
     // New images
