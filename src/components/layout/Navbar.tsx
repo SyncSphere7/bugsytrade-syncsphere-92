@@ -9,6 +9,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import NavLinks from './Navbar/NavLinks';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -16,7 +17,7 @@ const Navbar = () => {
   const location = useLocation();
 
   // Define which routes should have an initially visible navbar
-  const routesWithVisibleNavbar = ['/producers', '/services', '/about', '/blog'];
+  const routesWithVisibleNavbar = ['/producers', '/services', '/about', '/blog', '/gallery', '/import-process'];
   const isRouteWithVisibleNavbar = routesWithVisibleNavbar.includes(location.pathname);
 
   useEffect(() => {
@@ -59,60 +60,8 @@ const Navbar = () => {
             />
           </Link>
           
-          {/* Desktop navigation - Centered menu */}
-          <nav className="hidden lg:flex items-center space-x-8">
-            <Link 
-              to="/" 
-              className={`hover-underline text-base font-medium transition ${getTextColorClass()}`}
-            >
-              Home
-            </Link>
-            
-            <DropdownMenu>
-              <DropdownMenuTrigger className={`flex items-center text-base font-medium transition hover-underline ${getTextColorClass()}`}>
-                Products <ChevronDown className="ml-1 h-4 w-4" />
-              </DropdownMenuTrigger>
-              <DropdownMenuContent className="bg-white dark:bg-gray-800">
-                <DropdownMenuItem>
-                  <Link to="/products/coffee" className="w-full">Coffee</Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem>
-                  <Link to="/products/tea" className="w-full">Tea</Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem>
-                  <Link to="/products/vanilla" className="w-full">Vanilla</Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem>
-                  <Link to="/products/corn-flour" className="w-full">Corn Flour (Maize)</Link>
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-            
-            <Link 
-              to="/producers" 
-              className={`hover-underline text-base font-medium transition ${getTextColorClass()}`}
-            >
-              Producers
-            </Link>
-            <Link 
-              to="/services" 
-              className={`hover-underline text-base font-medium transition ${getTextColorClass()}`}
-            >
-              Services
-            </Link>
-            <Link 
-              to="/about" 
-              className={`hover-underline text-base font-medium transition ${getTextColorClass()}`}
-            >
-              About
-            </Link>
-            <Link 
-              to="/blog" 
-              className={`hover-underline text-base font-medium transition ${getTextColorClass()}`}
-            >
-              Blog
-            </Link>
-          </nav>
+          {/* Desktop navigation - Use the NavLinks component */}
+          <NavLinks isScrolled={isScrolled} isRouteWithVisibleNavbar={isRouteWithVisibleNavbar} />
           
           {/* Contact Us button - Right aligned */}
           <Link to="/contact" className="hidden lg:block">
@@ -203,6 +152,22 @@ const Navbar = () => {
             onClick={() => setMobileMenuOpen(false)}
           >
             Services
+          </Link>
+          
+          <Link 
+            to="/import-process" 
+            className="text-xl font-medium text-white hover:text-primary transition"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Import Process
+          </Link>
+          
+          <Link 
+            to="/gallery" 
+            className="text-xl font-medium text-white hover:text-primary transition"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Gallery
           </Link>
           
           <Link 
