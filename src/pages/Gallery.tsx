@@ -1,9 +1,11 @@
+
 import Layout from '@/components/layout/Layout';
 import SectionHeading from '@/components/ui/section-heading';
 import RevealOnScroll from '@/components/ui/reveal-on-scroll';
-import { GalleryHorizontal, Maximize } from 'lucide-react';
+import { GalleryHorizontal, Maximize, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useState } from 'react';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
+import { Button } from '@/components/ui/button';
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<{
@@ -11,6 +13,7 @@ const Gallery = () => {
     alt: string;
     category: string;
   } | null>(null);
+  const [selectedIndex, setSelectedIndex] = useState<number>(-1);
 
   const galleryImages = [
     {
@@ -116,12 +119,30 @@ const Gallery = () => {
     }
   ];
 
-  const handleImageClick = (image: typeof galleryImages[0]) => {
+  const handleImageClick = (image: typeof galleryImages[0], index: number) => {
     setSelectedImage(image);
+    setSelectedIndex(index);
   };
 
   const handleCloseDialog = () => {
     setSelectedImage(null);
+    setSelectedIndex(-1);
+  };
+
+  const handlePrevImage = () => {
+    if (selectedIndex > 0) {
+      const newIndex = selectedIndex - 1;
+      setSelectedIndex(newIndex);
+      setSelectedImage(galleryImages[newIndex]);
+    }
+  };
+
+  const handleNextImage = () => {
+    if (selectedIndex < galleryImages.length - 1) {
+      const newIndex = selectedIndex + 1;
+      setSelectedIndex(newIndex);
+      setSelectedImage(galleryImages[newIndex]);
+    }
   };
 
   return (
@@ -170,7 +191,7 @@ const Gallery = () => {
               <RevealOnScroll key={index} delay={index * 0.1}>
                 <div 
                   className="overflow-hidden rounded-lg shadow-lg group relative h-64 cursor-pointer"
-                  onClick={() => handleImageClick(image)}
+                  onClick={() => handleImageClick(image, index)}
                 >
                   <img 
                     src={image.src}
@@ -232,6 +253,36 @@ const Gallery = () => {
                   <p className="text-white/80 text-sm mt-1">
                     {selectedImage.category}
                   </p>
+                </div>
+                
+                {/* Navigation Controls */}
+                <div className="absolute inset-y-0 left-0 right-0 flex justify-between items-center px-4">
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    className="rounded-full bg-white/70 hover:bg-white border-none"
+                    onClick={handlePrevImage}
+                    disabled={selectedIndex <= 0}
+                  >
+                    <ChevronLeft className="h-6 w-6" />
+                    <span className="sr-only">Previous image</span>
+                  </Button>
+                  
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    className="rounded-full bg-white/70 hover:bg-white border-none"
+                    onClick={handleNextImage}
+                    disabled={selectedIndex >= galleryImages.length - 1}
+                  >
+                    <ChevronRight className="h-6 w-6" />
+                    <span className="sr-only">Next image</span>
+                  </Button>
+                </div>
+                
+                {/* Image Counter */}
+                <div className="absolute top-4 left-4 bg-black/50 px-2 py-1 rounded text-white text-sm">
+                  {selectedIndex + 1} / {galleryImages.length}
                 </div>
               </>
             )}
