@@ -25,7 +25,7 @@ const Hero = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ 
-          backgroundImage: `url('/lovable-uploads/c95807c4-1ec4-4d5d-b6da-994f3b055709.png')`,
+          backgroundImage: `url('/lovable-uploads/832530d3-5298-42e6-ba50-d9e7b79a44e4.png')`,
           transform: `translateY(${parallaxValue}px)`,
           backgroundPositionY: `${-parallaxValue * 0.5}px`,
         }}
