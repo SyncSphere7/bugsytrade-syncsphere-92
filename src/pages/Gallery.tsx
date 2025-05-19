@@ -161,7 +161,10 @@ const Gallery = () => {
               Gallery
             </h1>
             <p className="text-xl text-gray-700">
-              Visual showcases of Uganda's agricultural excellence, production facilities, and the dedicated farmers we work with.
+              Visual showcases of Uganda's agricultural excellence, production facilities, and the dedicated farmers we work with. 
+              <a href="mailto:office@bugsytrade.com" className="text-coffee hover:underline ml-1">
+                Contact us
+              </a> for more information.
             </p>
           </div>
         </div>
