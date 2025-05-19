@@ -6,6 +6,7 @@ import Services from '@/components/home/Services';
 import ProducerSpotlight from '@/components/home/ProducerSpotlight';
 import Testimonials from '@/components/home/Testimonials';
 import CallToAction from '@/components/home/CallToAction';
+import Statistics from '@/components/home/Statistics';
 import Layout from '@/components/layout/Layout';
 
 const Index = () => {
@@ -13,6 +14,7 @@ const Index = () => {
     <Layout>
       <Hero />
       <About />
+      <Statistics />
       <Products />
       <ProducerSpotlight />
       <Testimonials />
