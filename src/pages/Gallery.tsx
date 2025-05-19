@@ -1,3 +1,4 @@
+
 import Layout from '@/components/layout/Layout';
 import SectionHeading from '@/components/ui/section-heading';
 import RevealOnScroll from '@/components/ui/reveal-on-scroll';
@@ -41,8 +42,8 @@ const Gallery = () => {
       category: "Quality Control"
     },
     {
-      src: "/lovable-uploads/77bed13d-6c7e-4c8f-aee5-b4ee0239ed76.png",
-      alt: "Vanilla beans",
+      src: "/lovable-uploads/7860ed45-bff1-499f-9156-29a03357ace0.png",
+      alt: "Corn flour (Maize)",
       category: "Products"
     },
     {
