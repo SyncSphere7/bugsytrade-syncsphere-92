@@ -1,3 +1,4 @@
+
 import Layout from '@/components/layout/Layout';
 import SectionHeading from '@/components/ui/section-heading';
 import RevealOnScroll from '@/components/ui/reveal-on-scroll';
@@ -51,7 +52,7 @@ const Gallery = () => {
       category: "Producers"
     },
     {
-      src: "/lovable-uploads/cf6fd754-2a15-4f7d-b7b5-cdf97a580988.png",
+      src: "/lovable-uploads/8eb18bbd-b442-4b10-8f02-a9d4bffb113c.png",
       alt: "Coffee sacks ready for export",
       category: "Logistics"
     },
