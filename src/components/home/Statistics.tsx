@@ -93,7 +93,7 @@ const Statistics = () => {
         
         <div className="mt-12 text-center text-gray-600 text-sm">
           <RevealOnScroll delay={8}>
-            <p>Source: Uganda Bureau of Statistics (UBOS) and Ministry of Agriculture, 2023</p>
+            <p>Source: Uganda Bureau of Statistics (UBOS) and Ministry of Agriculture, 2024</p>
           </RevealOnScroll>
         </div>
       </div>
