@@ -16,17 +16,18 @@ interface StatItemProps {
 
 const StatItem = ({ icon, value, label, suffix, color, delay }: StatItemProps) => (
   <RevealOnScroll delay={delay} direction="up">
-    <div className="p-6 rounded-lg border bg-white shadow-sm flex flex-col items-center text-center hover:shadow-md transition-shadow duration-300 h-full min-h-[260px] flex justify-between">
-      <div className={`mb-4 text-${color} p-3 rounded-full bg-${color}/10`}>
+    <div className="p-6 rounded-lg border bg-white shadow-sm hover:shadow-md transition-shadow duration-300 h-full min-h-[280px] flex flex-col">
+      <div className={`text-${color} p-3 rounded-full bg-${color}/10 flex items-center justify-center`}>
         {icon}
       </div>
-      <div className="flex-1 flex flex-col items-center justify-center my-4">
+      
+      <div className="flex-1 flex flex-col items-center justify-center my-6">
         <StatsCounter 
           end={value} 
           suffix={suffix} 
-          className={`text-${color} mb-2`}
+          className={`text-${color} mb-4`}
         />
-        <div className="text-gray-600">{label}</div>
+        <div className="text-gray-600 text-center">{label}</div>
       </div>
     </div>
   </RevealOnScroll>
