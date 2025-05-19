@@ -226,7 +226,7 @@ const Services = () => {
           <Link to="/contact">
             <Button 
               size="lg" 
-              className="bg-white/20 text-white border border-white hover:bg-white hover:text-coffee transition-all"
+              className="bg-white text-coffee hover:bg-white/80 transition-all"
             >
               Request a Consultation <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
