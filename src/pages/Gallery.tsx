@@ -2,9 +2,11 @@
 import Layout from '@/components/layout/Layout';
 import SectionHeading from '@/components/ui/section-heading';
 import RevealOnScroll from '@/components/ui/reveal-on-scroll';
+import { Gallery as GalleryIcon, Images } from 'lucide-react';
 
 const Gallery = () => {
   const galleryImages = [
+    // Original images
     {
       src: "/lovable-uploads/0634ee8b-a672-4298-a5d6-39ec11006714.png",
       alt: "Coffee farmer harvesting",
@@ -44,6 +46,67 @@ const Gallery = () => {
       src: "/lovable-uploads/cf6fd754-2a15-4f7d-b7b5-cdf97a580988.png",
       alt: "Export loading",
       category: "Logistics"
+    },
+    // New images
+    {
+      src: "/lovable-uploads/9659d9b3-582e-4bbe-b747-bd8beee082fd.png",
+      alt: "Team members in office",
+      category: "Partners"
+    },
+    {
+      src: "/lovable-uploads/ec5ee5f4-dcf0-4942-a370-b9ea8b4dcb21.png",
+      alt: "Coffee processing facility",
+      category: "Production"
+    },
+    {
+      src: "/lovable-uploads/dbf75d77-3218-4f6c-a6cf-a6046850bc09.png",
+      alt: "Coffee plantation",
+      category: "Farming"
+    },
+    {
+      src: "/lovable-uploads/f5837b6e-3813-4c38-874e-3885dfdff5b8.png",
+      alt: "Farmers with representative",
+      category: "Partnerships"
+    },
+    {
+      src: "/lovable-uploads/8178c7d4-5c44-4d92-957f-26cb0afa52c1.png",
+      alt: "Coffee trees inspection",
+      category: "Quality Control"
+    },
+    {
+      src: "/lovable-uploads/ca1cc375-7bd6-4428-8801-ecbbcfec36ce.png",
+      alt: "Coffee bean sorting",
+      category: "Processing"
+    },
+    {
+      src: "/lovable-uploads/c50d7949-94cf-4ffa-8f90-32ea59c474a4.png",
+      alt: "Coffee processing equipment",
+      category: "Equipment"
+    },
+    {
+      src: "/lovable-uploads/40451d55-5686-454c-afb7-ca9c5cd1f30a.png",
+      alt: "Industrial processing facility",
+      category: "Production"
+    },
+    {
+      src: "/lovable-uploads/cb5cf09a-088e-4952-abf3-1c9fcabcd01a.png",
+      alt: "Coffee bean storage",
+      category: "Storage"
+    },
+    {
+      src: "/lovable-uploads/fd6419aa-3f95-4d7e-adcb-bd5865b77d80.png",
+      alt: "Warehouse with representatives",
+      category: "Distribution"
+    },
+    {
+      src: "/lovable-uploads/ade9315d-1dba-405d-969b-da28acfdca0a.png",
+      alt: "Business meeting",
+      category: "Partnerships"
+    },
+    {
+      src: "/lovable-uploads/af79d09b-5773-425d-8a49-cd007aafae7f.png",
+      alt: "Partnership handshake",
+      category: "Partnerships"
     }
   ];
 
@@ -78,6 +141,15 @@ const Gallery = () => {
               centered
             />
           </RevealOnScroll>
+
+          <div className="flex justify-center mb-8">
+            <div className="inline-flex items-center p-1 bg-gray-100 rounded-lg">
+              <div className="flex items-center gap-2 py-2 px-4 rounded-md bg-coffee text-white">
+                <Images className="h-5 w-5" />
+                <span className="font-medium">All Images</span>
+              </div>
+            </div>
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-12">
             {galleryImages.map((image, index) => (
