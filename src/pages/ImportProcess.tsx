@@ -102,8 +102,8 @@ const ImportProcess = () => {
       <div className="relative bg-coffee-dark text-white py-32">
         <div className="absolute inset-0 overflow-hidden">
           <img 
-            src="/lovable-uploads/cf6fd754-2a15-4f7d-b7b5-cdf97a580988.png" 
-            alt="Shipping containers" 
+            src="/lovable-uploads/bf96143c-1c85-442a-899d-7774e6dd0bac.png" 
+            alt="Cargo ship with shipping containers" 
             className="w-full h-full object-cover opacity-40"
           />
         </div>
@@ -176,9 +176,16 @@ const ImportProcess = () => {
               ))}
             </div>
 
-            <div className="bg-coffee/10 p-8 rounded-lg mt-12">
+            <div className="bg-coffee/10 p-8 rounded-lg mt-12 relative overflow-hidden">
+              <div className="absolute right-0 top-0 w-1/3 h-full opacity-10">
+                <img 
+                  src="/lovable-uploads/2a6aa891-868a-4ad7-9c43-d8ec962c23b1.png"
+                  alt="Coffee bean sack"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <h3 className="text-xl font-bold mb-4 text-center">Our Commitment</h3>
-              <p className="text-gray-700 text-center">
+              <p className="text-gray-700 text-center max-w-3xl mx-auto">
                 At Bugsy Trade, we understand that international trade can be complex, especially for first-time importers. 
                 We're committed to guiding you through every step of the process, offering clear communication, transparent pricing, 
                 and flexible solutions tailored to your specific needs.
@@ -189,20 +196,31 @@ const ImportProcess = () => {
       </section>
 
       <section className="py-16 bg-white">
-        <div className="container mx-auto px-6 text-center">
-          <RevealOnScroll>
-            <div className="max-w-3xl mx-auto">
-              <h2 className="text-3xl font-bold font-serif mb-6">Ready to Begin?</h2>
-              <p className="text-lg text-gray-700 mb-8">
-                Contact us today to discuss your import needs and start the process of bringing Uganda's premium agricultural products to your market.
-              </p>
-              <Link to="/contact">
-                <Button size="lg" className="bg-coffee hover:bg-coffee-dark">
-                  Start Your Import Journey <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
+        <div className="container mx-auto px-6">
+          <div className="flex flex-col md:flex-row gap-12 items-center">
+            <div className="md:w-1/2">
+              <img 
+                src="/lovable-uploads/4f1478c0-b590-4616-84c5-8f6bfcb81d63.png" 
+                alt="Shipping containers with cargo plane" 
+                className="rounded-lg shadow-xl w-full h-auto"
+              />
             </div>
-          </RevealOnScroll>
+            <div className="md:w-1/2">
+              <RevealOnScroll>
+                <div>
+                  <h2 className="text-3xl font-bold font-serif mb-6">Ready to Begin?</h2>
+                  <p className="text-lg text-gray-700 mb-8">
+                    Contact us today to discuss your import needs and start the process of bringing Uganda's premium agricultural products to your market.
+                  </p>
+                  <Link to="/contact">
+                    <Button size="lg" className="bg-coffee hover:bg-coffee-dark">
+                      Start Your Import Journey <ArrowRight className="ml-2 h-5 w-5" />
+                    </Button>
+                  </Link>
+                </div>
+              </RevealOnScroll>
+            </div>
+          </div>
         </div>
       </section>
     </Layout>

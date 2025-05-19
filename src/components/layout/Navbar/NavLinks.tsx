@@ -76,12 +76,6 @@ const NavLinks: React.FC<NavLinksProps> = ({ isScrolled, isRouteWithVisibleNavba
         Gallery
       </Link>
       <Link 
-        to="/movies" 
-        className={`hover-underline text-base font-medium transition ${getTextColorClass()}`}
-      >
-        Movies
-      </Link>
-      <Link 
         to="/about" 
         className={`hover-underline text-base font-medium transition ${getTextColorClass()}`}
       >
