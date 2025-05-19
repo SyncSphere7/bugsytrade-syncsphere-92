@@ -12,7 +12,7 @@ const ContactButton: React.FC<ContactButtonProps> = ({ isScrolled, isRouteWithVi
     <Link to="/contact" className="hidden lg:block">
       <Button 
         variant={isScrolled || isRouteWithVisibleNavbar ? "default" : "outline"} 
-        className={`rounded-md ${!isScrolled && !isRouteWithVisibleNavbar ? 'text-white border-white hover:text-white bg-transparent hover:bg-white/20' : ''}`}
+        className={`rounded-md ${!isScrolled && !isRouteWithVisibleNavbar ? 'text-white border-white hover:bg-white/20' : ''}`}
       >
         Contact Us
       </Button>
