@@ -79,12 +79,12 @@ const Services = () => {
 
   return (
     <Layout>
-      {/* Hero Section - Updated with handshake image */}
+      {/* Hero Section - Updated with new handshake image */}
       <div className="relative bg-cream py-32">
         <div className="absolute inset-0 overflow-hidden opacity-25">
           <img 
-            src="/lovable-uploads/b2b53896-79f4-4ebd-a14a-311bb4eff9a9.png" 
-            alt="Joined hands in business partnership" 
+            src="/lovable-uploads/94b30d67-45d5-4ba4-b947-7b9baba73e44.png" 
+            alt="Handshake representing business partnership" 
             className="w-full h-full object-cover"
           />
         </div>
