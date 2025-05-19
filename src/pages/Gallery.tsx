@@ -1,4 +1,3 @@
-
 import Layout from '@/components/layout/Layout';
 import SectionHeading from '@/components/ui/section-heading';
 import RevealOnScroll from '@/components/ui/reveal-on-scroll';
@@ -32,9 +31,9 @@ const Gallery = () => {
       category: "Tea Plantation"
     },
     {
-      src: "/lovable-uploads/b2b53896-79f4-4ebd-a14a-311bb4eff9a9.png",
-      alt: "Coffee processing",
-      category: "Coffee Production"
+      src: "/lovable-uploads/a3ffbc6d-7744-43cf-aa8a-c3175dd67780.png",
+      alt: "Coffee sorting",
+      category: "Coffee Sorting"
     },
     {
       src: "/lovable-uploads/bef93f67-eee4-4f21-81bc-284a92e37ae0.png",
@@ -206,7 +205,6 @@ const Gallery = () => {
                       <h3 className="text-white text-shadow">{image.alt}</h3>
                     </div>
                   </div>
-                  {/* Add a subtle expand icon indicator */}
                   <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
                     <div className="bg-white/80 p-1 rounded-full">
                       <Maximize className="h-4 w-4 text-gray-800" />
